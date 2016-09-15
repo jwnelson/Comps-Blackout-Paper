@@ -1,10 +1,21 @@
-\documentclass[twocolumn]{article}
-\usepackage{amsmath}
+\documentclass[]{tufte-handout}
 
 %opening
 \title{The Plasma Blackout Problem Equation Cheat Sheet}
 \author{Jack Nelson}
 \date{October 2016}
+
+
+\usepackage{graphicx} % allow embedded images
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}} % set of paths to search for images
+\usepackage{amsmath}  % extended mathematics
+\usepackage{booktabs} % book-quality tables
+\usepackage{units}    % non-stacked fractions and better unit spacing
+\usepackage{multicol} % multiple column layout facilities
+\usepackage{lipsum}   % filler text
+\usepackage{fancyvrb} % extended verbatim environments
+\fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
 
 \begin{document}
 
@@ -16,14 +27,15 @@
 \section{Intro to the Blackout Problem}
 
 \section{Lorentz Windows}
+These are the equations used by Kim et. al. in the computer modeling of a plasma sheath in the vicinity of an $\mathbf{E}\times\mathbf{B}$ field~\cite{kim_analysis_2008}.
 
 \textbf{Ion Transport Equations}
 
 \begin{equation}
-	\nabla \cdot (\mathbf{V_i} n) = 0\\
+	\nabla \cdot (\mathbf{V_i} n) = 0
 \end{equation}
 \begin{equation}
-	m_{ i }n(\mathbf { V_{ i } } \cdot \nabla \mathbf { V_{ i } } )=en(\mathbf { E } +\mathbf { V_{ i } } \times \mathbf { B } )-m_{ i }n\nu _{ c }\mathbf { V_{ i } }\\
+	m_{ i }n(\mathbf { V_{ i } } \cdot \nabla \mathbf { V_{ i } } )=en(\mathbf { E } +\mathbf { V_{ i } } \times \mathbf { B } )-m_{ i }n\nu _{ c }\mathbf { V_{ i } }
 \end{equation}
 
 \textbf{Current Density of Plasma Sheath}
@@ -35,5 +47,8 @@
 \begin{equation}
 \nabla \cdot \mathbf{j} = 0
 \end{equation}
+
+\bibliography{plasma_blackout}
+\bibliographystyle{ieeetr}
 
 \end{document}
