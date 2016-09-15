@@ -25,12 +25,20 @@
 %\end{abstract}
 
 \section{Intro to the Blackout Problem}
+\textbf{Plasma Electron Frequency}
+\begin{equation}
+	\omega_e = \sqrt{\frac{n_e e^2}{\epsilon_0 m_e}} \ rad/sec
+\end{equation}
+
+This can be approximated as
+\begin{equation}
+	f_e \approx 9\sqrt{n_e} \ Hz
+\end{equation}
 
 \section{Lorentz Windows}
 These are the equations used by Kim et. al. in the computer modeling of a plasma sheath in the vicinity of an $\mathbf{E}\times\mathbf{B}$ field~\cite{kim_analysis_2008}.
 
 \textbf{Ion Transport Equations}
-
 \begin{equation}
 	\nabla \cdot (\mathbf{V_i} n) = 0
 \end{equation}
@@ -39,8 +47,18 @@ These are the equations used by Kim et. al. in the computer modeling of a plasma
 \end{equation}
 
 \textbf{Current Density of Plasma Sheath}
+The current density of the plasma is derived from the generalized Ohm's Law, and includes the Hall effect:
 \begin{equation}
 	\mathbf{j} = \sigma \left(\mathbf{E} + \frac{kT_e}{e}\nabla \ln n - \frac{\mathbf{j} \times \mathbf{B}}{en} + \left(\mathbf{V_i} \times \mathbf{B}\right)\right)
+\end{equation}
+
+The x and z components of the current density used in the 2D simulations simplify to:
+
+\begin{equation}
+	j_x = \sigma \left(E_x + \frac{kT_e}{e} \frac{\partial \ln n}{\partial x} - V_yB_z\right)
+\end{equation}
+\begin{equation}
+	j_z =\sigma \left(E_z + \frac{kT_e}{e}\frac{\partial\ln n}{\partial z}\right) 
 \end{equation}
 
 \textbf{Current Density Conservation}
