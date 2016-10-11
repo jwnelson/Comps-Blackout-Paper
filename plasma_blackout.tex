@@ -1,11 +1,11 @@
 \documentclass[twocolumn]{article}
 
-\usepackage{cleveref}
+%\usepackage{cleveref}
 \usepackage{amsmath}
 
 \begin{document}
 %opening
-\title{Methods of mitigating the electromagnetic blackout effect of plasma sheaths}
+\title{Mitigating the radio blackout effect of plasma sheaths at hypersonic and reentry velocities}
 \author{Jack Nelson,\\
 	Physics Department,\\
 	Occidental College, Los Angeles, CA}
@@ -20,8 +20,7 @@
 			 
 			 In this paper, we will establish a theoretical overview of the problem and look at the associated plasma physics in order to better frame the potential solutions.
 			 These solutions can be divided into two types: passive methods, which seek to affect the properties of the plasma sheath using passive features such the shaping of the vehicle, and active methods, which use active systems to communicate through the plasma sheath barrier.
-			 We will examine some of the passive and active solutions proposed since research into the subject began in the early 60's.
-			 Recent studies which propose solving the communications blackout problem using active electromagnetic fields and $\vec{E}\times\vec{B}$ techniques are also evaluated in the context of the earlier methods.
+			 We will examine some of the passive and active solutions that have been proposed, as well as recent studies which propose solving the communications blackout problem using active electromagnetic fields and $\vec{E}\times\vec{B}$ Lorentz forces.
 			 A method which uses electromagnetic scattering off of resonances induced by radio signals from outside the plasma sheath is presented as a solution that has the potential to minimize weight and equipment volume in the vehicle, yet remain effective.
 	 
 	
@@ -38,7 +37,13 @@
 	A side-effect of the hypersonic heating problem is the generation of large volumes of plasmisized atmospheric gases and the formation of a plasma sheath which envelopes the vehicle at high speeds.
 	The basic properties of plasma sheaths, such as thickness, temperature, and density, are not uniform over the entire sheath, are highly dependent on the vehicle configuration and atmosphere, and are extremely difficult to accurately predict.
 	
-\section{Plasma Sheaths of Hypersonic Vehicles}
+	An overview of the paper is as follows: \S\ref{sec:PlasmaSheaths} summarizes the basic properties of hypersonic vehicle plasma sheaths and introduces the plasma frequency $\omega_p$ as a fundamental measure of whether a plasma sheath will attenuate a radio wave with carrier frequency $\omega_s$.
+	\S\ref{sec:Waves} gives an overview of electromagnetic waves propagating through a plasma, as well as waves in the plasma medium itself, referred to as Langmuir waves or electron acoustic waves.
+	\S\ref{sec:Overview} divides a number of potential solutions to the blackout problem into active and passive methods, and briefly evaluates each one.
+	\S\ref{sec:Prior} summarizes past research into the radio blackout problem and potential solutions.
+	In \S\ref{sec:Solutions}, we look at a few promising solutions that have been studied in the last two decades which could potentially solve the radio blackout problem with minimal impact to the rest of a vehicle's systems and design.
+	
+\section{Plasma Sheaths of Hypersonic Vehicles} \label{sec:PlasmaSheaths}
 Plasma is a state of matter which is characterized by free-flowing negatively-charged electrons, positive ions, and other neutral atoms and particles.
 The free electrons and ions give plasma unique electromagnetic properties not seen in the other states of matter.
 
@@ -70,14 +75,14 @@ While analytical prediction of plasma densities can be difficult, data taken dur
 
 Measurements taken during a flight of NASA's RAM C program measured typical plasma densities of a vehicle reentering at 7.6 km/s (25,000 ft/s) range from $10^{16}$ to $10^{17}$ electrons per cubic meter between altitudes of 80 and 70 km.\cite{akey_radio_1970}
 This corresponds to cutoff plasma frequencies of 900 MHz to 2,850 MHz.
-For more information on the RAM program and results, see \cref{sec:prior}.
+For more information on the RAM program and results, see \ref{sec:prior}.
 
 Data taken during the reentry of Mercury 6 at 7.3 km/s (24,000 ft/s) found the peak frequency of the plasma sheath around the location of the antennas to be about 500 GHz, which corresponds to a peak plasma density of $2.11*10^{21} \  m^{-3}$.
 The VHF radio blackout duration for Mercury 6 lasted approximately 4.5 minutes from 90 km to 40 km in altitude.
 In the stagnation region of the vehicle, the plasma frequency was found to peak at 6,000 GHz, corresponding to a plasma density of $5*10^{23} m^{-3}$. \cite{lehnert_plasma_1964}
 
 
-\subsection*{Plasma Waves}
+\section{Physics of Waves in Plasma} \label{sec:Waves}
 The theory of how electromagnetic waves propagate in and interact with a plasma is important to understanding potential solutions of the radio blackout problem.
 What follows is an overview of the physics of electromagnetic waves in plasmas.
 For a more detailed and comprehensive introduction to the topic, see chapter 4 of \cite{chen_introduction_1984}, chapter 6 of \cite{papas_theory_1965}, and chapter 9 of \cite{fitzpatrick_maxwells_2008}.
@@ -85,11 +90,11 @@ For a more detailed and comprehensive introduction to the topic, see chapter 4 o
 
 
 
-\section{Overview of Solutions}
+\section{Overview of Solutions} \label{sec:Overview}
 \subsection*{Passive Techniques}
 \subsection*{Active Techniques}
 
-\section{Prior Research} \label{sec:prior}
+\section{Prior Research} \label{sec:Prior}
 	\subsection*{NASA RAM Studies}
 	Radio wave attenuation in plasma sheaths and various methods of preventing it have been studied since at least the early 1960's.
 	
@@ -105,7 +110,7 @@ For a more detailed and comprehensive introduction to the topic, see chapter 4 o
 	The RAM C flights studied advanced plasma diagnostics as well as liquid quenching.\cite{huber_entry_1971}
 
 
-\section{Active Solutions}
+\section{Active Solutions} \label{sec:Solutions}
 \subsection*{Lorentz Windows}
 \subsection*{Stokes Waves}
 
