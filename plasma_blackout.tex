@@ -1,6 +1,7 @@
 \documentclass[twocolumn]{article}
 
-
+\usepackage{cleveref}
+\usepackage{amsmath}
 
 \begin{document}
 %opening
@@ -30,22 +31,65 @@
 \section{Introduction}
 	Spacecraft reentering an atmosphere from orbital velocities and aircraft traveling at hypersonic speeds experience the problem of aerodynamic heating, in which their large kinetic energies are transferred into heat by hypersonic interactions with the atmosphere.
 	The problem of convective aerodynamic heating of a reentry vehicle was adequately solved by the first human space flights in the early 1960's.
-	For reentry speeds, was found that blunt bodies as opposed to slender, streamlined ones minimize the total heat which is transferred to the vehicle from the air. \cite{allen_study_1958}
+	For reentry speeds, was found that blunt bodies as opposed to slender, streamlined ones minimize the total heat which is transferred to the vehicle from the air.\cite{allen_study_1958}
 	Blunt body capsule designs coupled with ablative heat shield technology created a simple yet effective solution to the reentry heating problem which is still widely used today.
-	For hypersonic aircraft which operate at less than reentry speeds, such as NASA's X-15 piloted research vehicle, the heating problem is solved using thick skin heat sinks made of high heat capacity superalloys such as Inconel-X. \cite{stillwell_x-15_1965}
+	For hypersonic aircraft which operate at less than reentry speeds, such as NASA's X-15 piloted research vehicle, the heating problem is solved using thick skin heat sinks made of high heat capacity superalloys such as Inconel-X.\cite{stillwell_x-15_1965}
 	
 	A side-effect of the hypersonic heating problem is the generation of large volumes of plasmisized atmospheric gases and the formation of a plasma sheath which envelopes the vehicle at high speeds.
 	The basic properties of plasma sheaths, such as thickness, temperature, and density, are not uniform over the entire sheath, are highly dependent on the vehicle configuration and atmosphere, and are extremely difficult to accurately predict.
 	
-\section{Hypersonic Plasma Sheaths}
+\section{Plasma Sheaths of Hypersonic Vehicles}
+Plasma is a state of matter which is characterized by free-flowing negatively-charged electrons, positive ions, and other neutral atoms and particles.
+The free electrons and ions give plasma unique electromagnetic properties not seen in the other states of matter.
+
+An important characteristic property of a plasma is its plasma frequency $\omega_p$ given by the equation
+\begin{equation} \label{plasma_f}
+\omega_p = \sqrt{\frac{n_e e^2}{\epsilon_0 m_e}}
+\end{equation}
+where $e$ is the charge of the electron, $\epsilon_0$ is the permitivity of free space, and $m_e$ is the mass of the electron. 
+The quantity $n_e$ is the density of electrons in the plasma.
+Equation \ref{plasma_f} is interchangeably referred to as the plasma frequency and plasma electron frequency. The plasma frequency given by Equation \ref{plasma_f} is the resonance frequency of the free electrons about positive ions in the plasma when disturbed by an electromagnetic force such as a radio wave.
+
+Since all factors except $n_e$ on the right hand side of  Equation \ref{plasma_f} are constants, Equation \ref{plasma_f} can be simplified and approximated to
+\begin{equation} \label{plasmafapprox}
+\omega_p \approx 18\pi\sqrt{n_e}
+\end{equation}
+As we can see from Equation \ref{plasmafapprox}, the plasma frequency is only dependent on the density of electrons in the plasma, which will hereafter be referred to as the plasma density.
+
+As will be shown in the next section, the plasma frequency is fundamentally important to the radio blackout problem because it is the transmission cutoff frequency for radio waves propagating through a plasma sheath.
+A signal radio wave with carrier frequency $\omega_s$ that is greater than the plasma frequency $\omega_p$ will propagate through the sheath and reach the vehicle with minor attenuation if any at all, and vice versa from the vehicle to an outside receiver.
+Signal radio waves with frequencies less than or equal to the plasma frequency, on the other hand, will be totally attenuated by and reflected off the plasma sheath, preventing any signals from reaching or leaving the vehicle enveloped in the sheath.
+
+The electron density of a plasma sheath is notoriously difficult to predict and not uniform over the entire sheath.
+The plasma density is roughly proportional to the vehicle's velocity and the local atmospheric density.
+Because of this, a reentering spacecraft will experience a large range of plasma densities over the duration of its reentry.
+
+The plasma sheath density is also highly dependent on the geometry of the vehicle itself.
+
+While analytical prediction of plasma densities can be difficult, data taken during actual spacecraft atmospheric reentry has given us useful observational data of typical peak plasma densities and blackout windows for different radio frequencies over varying velocity and altitude.
+
+Measurements taken during a flight of NASA's RAM C program measured typical plasma densities of a vehicle reentering at 7.6 km/s (25,000 ft/s) range from $10^{16}$ to $10^{17}$ electrons per cubic meter between altitudes of 80 and 70 km.\cite{akey_radio_1970}
+This corresponds to cutoff plasma frequencies of 900 MHz to 2,850 MHz.
+For more information on the RAM program and results, see \cref{sec:prior}.
+
+Data taken during the reentry of Mercury 6 at 7.3 km/s (24,000 ft/s) found the peak frequency of the plasma sheath around the location of the antennas to be about 500 GHz, which corresponds to a peak plasma density of $2.11*10^{21} \  m^{-3}$.
+The VHF radio blackout duration for Mercury 6 lasted approximately 4.5 minutes from 90 km to 40 km in altitude.
+In the stagnation region of the vehicle, the plasma frequency was found to peak at 6,000 GHz, corresponding to a plasma density of $5*10^{23} m^{-3}$. \cite{lehnert_plasma_1964}
+
 
 \subsection*{Plasma Waves}
+The theory of how electromagnetic waves propagate in and interact with a plasma is important to understanding potential solutions of the radio blackout problem.
+What follows is an overview of the physics of electromagnetic waves in plasmas.
+For a more detailed and comprehensive introduction to the topic, see chapter 4 of \cite{chen_introduction_1984}, chapter 6 of \cite{papas_theory_1965}, and chapter 9 of \cite{fitzpatrick_maxwells_2008}.
+
+
+
 
 \section{Overview of Solutions}
 \subsection*{Passive Techniques}
 \subsection*{Active Techniques}
 
-\section{Prior Research}
+\section{Prior Research} \label{sec:prior}
 	\subsection*{NASA RAM Studies}
 	Radio wave attenuation in plasma sheaths and various methods of preventing it have been studied since at least the early 1960's.
 	
@@ -55,16 +99,17 @@
 	
 	The RAM program consisted of a series of three flight test campaigns and eight flights total.
 	The tests consisted of launching a reentry vehicle packed with plasma and radio diagnostic experiments on three and four-staged sounding rockets on a sub-orbital trajectory.
-	The RAM A and B campaigns were comprised of four test flights which studied the reentry plasma sheath at a reentry velocity of 5.5 km/s (18,000 ft/s). \cite{huber_entry_1971}
+	The RAM A and B campaigns were comprised of four test flights which studied the reentry plasma sheath at a reentry velocity of 5.5 km/s (18,000 ft/s).\cite{huber_entry_1971}
 	The two RAM A flights primarily studied aerodynamic shaping and magnetic window techniques, while the three RAM B flights studied water quenching and advanced study of the plasma sheath.
 	The four RAM C flights reentered at 7.6 km/s (25,000 ft/s), which is comparable to low Earth orbit reentry velocities of around 8 km/s. 
-	The RAM C flights studied advanced plasma diagnostics as well as liquid quenching. \cite{huber_entry_1971}
+	The RAM C flights studied advanced plasma diagnostics as well as liquid quenching.\cite{huber_entry_1971}
+
 
 \section{Active Solutions}
 \subsection*{Lorentz Windows}
 \subsection*{Stokes Waves}
 
 \bibliography{plasma_blackout}
-\bibliographystyle{ieee}
+\bibliographystyle{plain}
 
 \end{document}
