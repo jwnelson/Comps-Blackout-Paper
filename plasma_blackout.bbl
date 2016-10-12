@@ -30,6 +30,12 @@ Paul~W. Huber, Norman~D. Akey, W.F. Crosswell, and C.T. Swift.
   electromagnetic systems.
 \newblock {NASA} {Technical} {Note} SP-252, 1971.
 
+\bibitem{kim_analysis_2008}
+Minkwan Kim, Michael Keidar, and Iain~D. Boyd.
+\newblock Analysis of an {Electromagnetic} {Mitigation} {Scheme} for {Reentry}
+  {Telemetry} {Through} {Plasma}.
+\newblock {\em Journal of Spacecraft and Rockets}, 45(6):1223--1229, 2008.
+
 \bibitem{lehnert_plasma_1964}
 Richard Lehnert and Bernard Rosenbaum.
 \newblock Plasma {Effects} on {Apollo} {Re}-{Entry} {Communication}.
