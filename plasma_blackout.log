@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.16)  14 OCT 2016 00:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.16)  14 OCT 2016 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -248,28 +248,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--62
 []\OT1/cmr/bx/n/12 Properties of Hy-per-sonic Plasma
  []
 
-[2] [3]
+[2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+[]\OT1/cmr/bx/n/12 Electromagnetic Waves in a
+ []
+
+[4]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ‹ in font cmr10!
- [4] <Images/intro-atmospheric.png, id=30, 963.6pt x 722.7pt>
+ <Images/intro-atmospheric.png, id=31, 963.6pt x 722.7pt>
 File: Images/intro-atmospheric.png Graphic file (type png)
 
 <use Images/intro-atmospheric.png>
-Package pdftex.def Info: Images/intro-atmospheric.png used on input line 204.
+Package pdftex.def Info: Images/intro-atmospheric.png used on input line 280.
 (pdftex.def)             Requested size: 211.04857pt x 158.2777pt.
- (./plasma_blackout.bbl [5 <./Images/intro-atmospheric.png>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+Underfull \vbox (badness 4913) has occurred while \output is active []
+
+
+(./plasma_blackout.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <./Images/intro-atmospheric.png>]
 Underfull \hbox (badness 1199) in paragraph at lines 37--40
 \OT1/cmr/m/it/10 Prin-ci-ples of Elec-tro-mag-netism\OT1/cmr/m/n/10 .  Jones an
 d
  []
 
-) [6] (./plasma_blackout.aux) ) 
+) [7] (./plasma_blackout.aux) ) 
 Here is how much of TeX's memory you used:
- 3257 strings out of 493304
- 48822 string characters out of 6139870
- 115748 words of memory out of 5000000
- 6681 multiletter control sequences out of 15000+600000
+ 3264 strings out of 493304
+ 48941 string characters out of 6139870
+ 116809 words of memory out of 5000000
+ 6688 multiletter control sequences out of 15000+600000
  11745 words of font info for 42 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,7n,38p,407b,311s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -283,16 +301,16 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
-b>
-Output written on plasma_blackout.pdf (6 pages, 302465 bytes).
+s/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on plasma_blackout.pdf (7 pages, 316954 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 99 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

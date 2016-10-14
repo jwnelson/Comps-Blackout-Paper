@@ -104,6 +104,82 @@ The theory of how electromagnetic waves propagate in and interact with a plasma 
 What follows is an overview of the physics of electromagnetic and Langmuir waves in plasmas.
 For a more detailed and comprehensive introduction to the topic, see chapter 4 of \cite{chen_introduction_1984}, chapter 6 of \cite{papas_theory_1965}, and chapter 9 of \cite{fitzpatrick_maxwells_2008}.
 
+\subsection{Electromagnetic Waves in a Vacuum}
+Before looking at how a plasma effects the propagation of an electromagnetic wave, we first look at how a wave travels in a vacuum.
+We start with Maxwell's equations in a vacuum given by:
+
+\begin{equation}
+	\nabla \cdot \mathbf{E} = 0
+\end{equation}
+\begin{equation}
+	\nabla \cdot \mathbf{B} = 0
+\end{equation}
+\begin{equation} 
+	\label{eq:MaxVacCurlE}
+	\nabla \times \mathbf{E} = -\frac{1}{c} \frac{\partial \mathbf{B}}{\partial t}
+\end{equation}
+\begin{equation} 
+	\label{eq:MaxVacCurlB}
+	\nabla \times \mathbf{B} = \frac{1}{c} \frac{\partial \mathbf{E}}{\partial t}
+\end{equation}
+
+The last two equations are the relevant ones in this situation.
+If we take the curl of equation \ref{eq:MaxVacCurlE} and the partial time derivative of equation \ref{eq:MaxVacCurlB}, we have
+
+\begin{equation}
+	\label{eq:CurlVacCurlE}
+	\nabla \times ( \nabla \times \mathbf{E}) = \nabla \times (-\frac{1}{c} \frac{\partial \mathbf{B}}{\partial t}) 
+\end{equation}
+\begin{center}
+	and
+\end{center}
+\begin{equation}
+	\label{eq:PartialVacCurlB}
+	\nabla \times \frac{\partial \mathbf{B}}{\partial t} = \frac{1}{c} \frac{\partial^2 \mathbf{E}}{\partial t^2}
+\end{equation}
+
+Substituting (\ref{eq:PartialVacCurlB}) into (\ref{eq:CurlVacCurlE}),
+
+\begin{equation}
+	\nabla \times ( \nabla \times \mathbf{E}) = -\frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} 
+\end{equation}
+
+Using the vector identity $\nabla \times (\nabla \times \mathbf{E}) = \nabla(\nabla \cdot \mathbf{E}) - \nabla^2\mathbf{E}$,
+
+\begin{equation}
+	\label{eq:VacWaveEqtn}
+	\nabla^2\mathbf{E} - \frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} = 0
+\end{equation}
+This is the wave equation for the electric field, with
+
+\begin{equation}
+	c^2 = \frac{1}{\epsilon_0 \mu_0}
+\end{equation}
+
+The plane wave solutions of this equation take the form $e^{i(\mathbf{k} \cdot \mathbf{r} - \omega t)}$, which when substituted into \ref{eq:VacWaveEqtn} results in
+
+\begin{equation}
+	-\omega^2\mathbf{E} + c^2k^2\mathbf{E}
+\end{equation}
+Which reduces to the dispersion relation of the wave given by
+\begin{equation}
+	\omega^2 = k^2c^2
+\end{equation}
+
+The quantity $c$ is the phase velocity $\frac{\omega}{k}$ of the light waves which in a vacuum is, of course, the speed of light in a vacuum given by $c = \frac{1}{\sqrt{\mu_0\epsilon_0}}$.
+
+\subsection{Electromagnetic Waves in a Plasma}
+If we consider an electromagnetic wave traveling through a medium such as a plasma, we must include the extra term $\mathbf{j_1}/\epsilon_0$ in equation (\ref{eq:MaxVacCurlE}) to account for the currents of charged particle motions.
+Our relevant Maxwell's equations \ref{eq:MaxVacCurlB} and \ref{eq:MaxVacCurlB} then become:
+\begin{equation}
+	\label{eq:MaxPlasCurlE}
+	\nabla \times \mathbf{E} = -\frac{1}{c} \frac{\partial \mathbf{B}}{\partial t}
+\end{equation}
+\begin{equation}
+	\label{eq:MaxPlasCurlB}
+	\nabla \times \mathbf{B} = \frac{1}{c} (\frac{\partial \mathbf{E}}{\partial t} + \frac{\mathbf{j_1}}{\epsilon_0})
+\end{equation}
+
 The general electron fluid equation of motion in the presence of an electric field is given by
 \begin{equation} \label{eq:emotionhot}
 m_en_e \lbrack \frac{\partial \mathbf{v_e}}{\partial t} + \left( \mathbf{v_e} \cdot \mathbf{\nabla} \right) \mathbf{v_e} \rbrack = -en_e\mathbf{E} - \nabla p
