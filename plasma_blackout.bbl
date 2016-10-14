@@ -1,55 +1,69 @@
-\begin{thebibliography}{1}
-
-\bibitem{akey_radio_1970}
-Norman~D. Akey and Aubrey~E. Cross.
-\newblock Radio {Blackout} {Alleviation} and {Plasma} {Diagnostic} {Results}
-  {From} a 25,000 {Foot} {Per} {Second} {Blunt}-{Body} {Reentry}.
-\newblock Technical {Note} L-6866, Langley Research Center, February 1970.
+\begin{thebibliography}{10}
 
 \bibitem{allen_study_1958}
-H.~Julian Allen and A.~J. Eggers.
-\newblock A study of the motion and aerodynamic heating of ballistic missiles
-  entering the earth's atmosphere at high supersonic speeds.
-\newblock January 1958.
+H.~J. Allen and A.~J. Eggers, ``A study of the motion and aerodynamic heating
+  of ballistic missiles entering the earth's atmosphere at high supersonic
+  speeds,'' Jan. 1958.
+
+\bibitem{stillwell_x-15_1965}
+W.~H. Stillwell, ``X-15 {Research} {Results},'' {NASA} {Technical} {Report}
+  SP-60, NASA, 1965.
 
 \bibitem{chen_introduction_1984}
-Francis Chen.
-\newblock {\em Introduction to {Plasma} {Physics} and {Controlled} {Fusion}},
-  volume~1.
-\newblock Plenum Press, 2 edition, 1984.
+F.~Chen, {\em Introduction to {Plasma} {Physics} and {Controlled} {Fusion}},
+  vol.~1.
+\newblock Plenum Press, 2~ed., 1984.
+
+\bibitem{kim_analysis_2008}
+M.~Kim, M.~Keidar, and I.~D. Boyd, ``Analysis of an {Electromagnetic}
+  {Mitigation} {Scheme} for {Reentry} {Telemetry} {Through} {Plasma},'' {\em
+  Journal of Spacecraft and Rockets}, vol.~45, no.~6, pp.~1223--1229, 2008.
+
+\bibitem{akey_radio_1970}
+N.~D. Akey and A.~E. Cross, ``Radio {Blackout} {Alleviation} and {Plasma}
+  {Diagnostic} {Results} {From} a 25,000 {Foot} {Per} {Second} {Blunt}-{Body}
+  {Reentry},'' Technical {Note} L-6866, Langley Research Center, Feb. 1970.
+
+\bibitem{lehnert_plasma_1964}
+R.~Lehnert and B.~Rosenbaum, ``Plasma {Effects} on {Apollo} {Re}-{Entry}
+  {Communication},'' {NASA} {Technical} {Note} D-2732, Goddard Space Flight
+  Center, Greenbelt, Maryland, Jan. 1964.
+
+\bibitem{papas_theory_1965}
+C.~H. Papas, {\em Theory of {Electromagnetic} {Wave} {Propagation}}.
+\newblock Dover Books, 1965.
 
 \bibitem{fitzpatrick_maxwells_2008}
-Richard Fitzpatrick.
-\newblock {\em Maxwell's {Equations} and the {Principles} of
+R.~Fitzpatrick, {\em Maxwell's {Equations} and the {Principles} of
   {Electromagnetism}}.
 \newblock Jones and Bartlett Learning, 2008.
 
+\bibitem{hartunian_implications_2007}
+R.~A. Hartunian, G.~E. Stewart, T.~J. Curtiss, S.~D. Fergason, and R.~W.
+  Seibold, ``Implications and {Mitigation} of {Radio} {Frequency} {Blackout}
+  during {Reentry} of {Reusable} {Launch} {Vehicles},'' (Hilton Head, South
+  Carolina), Aug. 2007.
+
+\bibitem{altshuler_comparison_1988}
+E.~Altshuler and R.~Marr, ``A comparison of experimental and theoretical values
+  of atmospheric absorption at the longer millimeter wavelengths,'' {\em IEEE
+  Transactions on Antennas and Propagation}, vol.~36, pp.~1471--1480, Oct.
+  1988.
+
+\bibitem{oaida_optical_2014}
+B.~V. Oaida, W.~Wu, B.~I. Erkmen, A.~Biswas, K.~S. Andrews, M.~Kokorowski, and
+  M.~Wilkerson, ``Optical link design and validation testing of the {Optical}
+  {Payload} for {Lasercomm} {Science} ({OPALS}) system,'' vol.~8971,
+  pp.~89710U--89710U--15, 2014.
+
+\bibitem{abrahamson_achieving_2015}
+M.~J. Abrahamson, B.~V. Oaida, O.~Sindiy, and A.~Biswas, ``Achieving
+  operational two-way laser acquisition for {OPALS} payload on the
+  {International} {Space} {Station},'' vol.~9354, pp.~935408--935408--21, 2015.
+
 \bibitem{huber_entry_1971}
-Paul~W. Huber, Norman~D. Akey, W.F. Crosswell, and C.T. Swift.
-\newblock The entry plasma sheath and its effects on space vehicle
-  electromagnetic systems.
-\newblock {NASA} {Technical} {Note} SP-252, 1971.
-
-\bibitem{kim_analysis_2008}
-Minkwan Kim, Michael Keidar, and Iain~D. Boyd.
-\newblock Analysis of an {Electromagnetic} {Mitigation} {Scheme} for {Reentry}
-  {Telemetry} {Through} {Plasma}.
-\newblock {\em Journal of Spacecraft and Rockets}, 45(6):1223--1229, 2008.
-
-\bibitem{lehnert_plasma_1964}
-Richard Lehnert and Bernard Rosenbaum.
-\newblock Plasma {Effects} on {Apollo} {Re}-{Entry} {Communication}.
-\newblock {NASA} {Technical} {Note} D-2732, Goddard Space Flight Center,
-  Greenbelt, Maryland, January 1964.
-
-\bibitem{papas_theory_1965}
-Charles~H. Papas.
-\newblock {\em Theory of {Electromagnetic} {Wave} {Propagation}}.
-\newblock Dover Books, 1965.
-
-\bibitem{stillwell_x-15_1965}
-Wendell~H. Stillwell.
-\newblock X-15 {Research} {Results}.
-\newblock {NASA} {Technical} {Report} SP-60, NASA, 1965.
+P.~W. Huber, N.~D. Akey, W.~Crosswell, and C.~Swift, ``The entry plasma sheath
+  and its effects on space vehicle electromagnetic systems,'' {NASA}
+  {Technical} {Note} SP-252, 1971.
 
 \end{thebibliography}

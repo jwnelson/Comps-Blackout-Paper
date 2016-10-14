@@ -2,6 +2,14 @@
 
 %\usepackage{cleveref}
 \usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{caption}
+
+
+% Make table names in captions boldfaced
+\captionsetup[table]{labelfont=bf}
+\captionsetup[figure]{labelfont=bf}
 
 \begin{document}
 %opening
@@ -96,24 +104,23 @@ The theory of how electromagnetic waves propagate in and interact with a plasma 
 What follows is an overview of the physics of electromagnetic and Langmuir waves in plasmas.
 For a more detailed and comprehensive introduction to the topic, see chapter 4 of \cite{chen_introduction_1984}, chapter 6 of \cite{papas_theory_1965}, and chapter 9 of \cite{fitzpatrick_maxwells_2008}.
 
-In the context of analyzing the interaction of radio waves with a plasma, the assumption of whether the thermal motion of the electrons is significant or not is relevant.
-If thermal motion is considered, the pressure gradient term $-\mathbf{\nabla} p_e$ of the electron fluid must be included in the equation of motion of the electrons.
-When the pressure gradient term is ignored, we can derive a natural frequency of motion for the electrons about the inertially-fixed ions.
-This natural frequency is referred to in the literature as both the electron plasma frequency and the plasma frequency, and is given by Equation \ref{plasma_f}.
-Although we can derive a similar natural frequency for the ions in the plasma, the much greater mass of the ion makes this oscillation negligible compared to that of the electron.
+The general electron fluid equation of motion in the presence of an electric field is given by
+\begin{equation} \label{eq:emotionhot}
+m_en_e \lbrack \frac{\partial \mathbf{v_e}}{\partial t} + \left( \mathbf{v_e} \cdot \mathbf{\nabla} \right) \mathbf{v_e} \rbrack = -en_e\mathbf{E} - \nabla p
+\end{equation}
+Where $m_e$ is the mass of the electron, $n_e$ is the electron number density, $\mathbf{v_e}$ is the average electron velocity, $e$ is the electron charge, $\mathbf{E}$ is the electric field acting on the electron, and $p$ is the thermal motion pressure.
+
+We can derive two very different behaviors of the plasma from Equation \ref{eq:emotionhot} depending on whether we retain the pressure gradient term $\nabla p$.
+
+If the pressure gradient term is ignored, we can derive a wave equation for the electrons with a frequency given by the plasma frequency in Equation \ref{plasma_f}.
+Furthermore, the 
+These plasma oscillations induced by an external force do not propagate forward into the plasma and remain local to individual electron-ion pairs.
+
+If thermal motion is considered, the pressure gradient term of the electron fluid must be included in the equation of motion of the electrons, and the resulting wave equation 
 
 
 If the pressure gradient term is included, 
 \subsection*{Plasma Oscillations}
-
-The general electron equation of motion in the presence of an electric field is given by
-\begin{equation} \label{eq:emotionhot}
-mn_e \lbrack \frac{\partial \mathbf{v_e}}{\partial t} + \left( \mathbf{v_e} \cdot \mathbf{\nabla} \right) \mathbf{v_e} \rbrack = -en_e\mathbf{E} - 3KT_e \frac{\partial n_1}{\partial x}
-\end{equation}
-Where $m$ is the mass of the electron, $n_e$ is the electron number density, $\mathbf{v_e}$ is the velocity of the electron, $e$ is the electron charge, $\mathbf{E}$ is the electric field acting on the electron, 
-
-We can derive two very different behaviors of the plasma from Equation \ref{eq:emotionhot} depending on whether we retain the thermal
-
 The plasma frequency given by equation \ref{plasma_f} is a fundamental property of a plasma and important to the radio blackout problem, as was discussed in \S\ref{sec:PlasmaSheaths}.
 As was previously stated, the plasma frequency represents the natural frequency of free electrons in a non-ionized plasma.
 We will only summarize the derivation of the plasma frequency equation below, but a full derivation from fundamentals is given in \S\cite{chen_introduction_1984}.
@@ -148,8 +155,76 @@ $K$ is the Boltzmann constant, $T_e$ is the electron fluid temperature, and $n_1
 
 \section{Overview of Solutions} \label{sec:Overview}
 \subsection*{Passive Techniques}
+	Passive techniques involve designing the vehicle or mission profile to minimize or eliminate radio blackout.
 \subsection*{Active Techniques}
+	Active methods of solving the radio blackout problem involve active systems which either effect the properties of the plasma sheath to allow radio waves to pass through, or exploit other mechanisms to communicate across the plasma barrier.
+	Active solutions are of primary interest in current research, and are the focus of discussion in \S\ref{sec:Solutions}.
+	In this section, we'll summarize the most prominent active techniques.
+	
+	\subsubsection*{High-Frequency Radio}
+	Perhaps the simplest solution to the radio blackout problem is the most obvious: use radio waves with frequencies higher than the plasma frequency to communicate.
+	As was shown in \S\ref{sec:Waves}, electromagnetic waves with frequency higher than the plasma frequency will not be attenuated.
+	In \S\ref{sec:PlasmaSheaths} it was shown that typical orbital reentry peak plasma frequencies range from 3GHz to 500 GHz.
+	
+	Table \ref{tab:RadioBands} shows the common radio frequency band designations and ranges.
+	VHF and UHF are most commonly used for aircraft and spacecraft voice and data telemetry, but have relatively low frequencies, making them more susceptible to being attenuated by a plasma sheath.
+	Above VHF and UHF are the microwave bands which are commonly used for spacecraft data transmission and telemetry.
+	As Table \ref{tab:RadioBands} shows, higher frequency bands such as the K band could be used to overcome the radio blackout for hypersonic atmospheric cruise, and reduce or totally remove the duration of low earth orbit reentry blackouts.
+	
+	% ieee radio bands
+	\begin{table}[H]	
+		\centering
+		\begin{tabular}{c|c}
+			Band    & Frequency range   \\ \hline
+			HF      & 0.003 - 0.03 GHz \\
+			VHF     & 0.03 - 0.3 GHz   \\
+			UHF     & 0.3 - 1 GHz      \\
+			L       & 1 - 2 GHz        \\
+			S       & 2 - 4 GHz        \\
+			C       & 4 - 8 GHz        \\
+			X       & 8 - 12 GHz       \\
+			Ku      & 12 - 18 GHz      \\
+			K       & 18 - 27 GHz      \\
+			Ka      & 27 - 40 GHz      \\
+			V       & 40 - 75 GHz      \\
+			W       & 75 - 110 GHz     \\
+			mm or G & 110 - 300 GHz​  
+		\end{tabular}
+		\caption{\textbf{IEEE radio frequency bands.}}
+		\label{tab:RadioBands}
+	\end{table}
+	
+	The primary problem with using high-frequency radiation for vehicle-to-ground communication is the attenuation by atmospheric water vapor and gases such as molecular Oxygen.
+	As Figure \ref{fig:RadioAttenuation} shows, the atmospheric attenuation penalty increases rapidly as the wavelength of the radio wave decreases.
+	For frequencies above approximately 10 GHz, atmospheric attenuation becomes a significant even in dry atmospheric conditions, making the effectiveness of using high-frequency microwaves to solve the radio blackout problem limited.\cite{hartunian_implications_2007}
+	
+	% atmospheric radio attenuation plot.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.45\textwidth]{Images/intro-atmospheric.png}
+	\caption{\textbf{Atmospheric attenuation of radio waves by wavelength. Radio bandwidths are shown along the bottom horizontal axis.\cite{altshuler_comparison_1988}}}
+	\label{fig:RadioAttenuation}
+	\end{figure}
+	
+	Beyond the microwave band of electromagnetic radiation, the atmosphere becomes transparent again to light waves, posing another possible solution.
+	Research into Earth-to-space high-bandwidth optical communication has been conducted by the NASA Jet Propulsion Lab since 2014.
+	The Optical Payload for Lasercomm Science (OPALS) is an experimental optical communications system currently on-board the International Space Station that is being used to study the feasibility of such communications.
+	The OPALS system uses a 1,550 nm 2.5W laser to communicate with a ground station on Earth, downlinking video data at 50 Mb/s. \cite{oaida_optical_2014}.
+	Initial results have been promising, however there is a strict requirement on pointing accuracy of the laser, unlike radio and microwave signals. \cite{abrahamson_achieving_2015}
+	
+	\subsubsection*{Liquid Quenching}
+	A technique that has been studied and even flight tested to good success is injecting a liquid such as water into the plasma flow field.
+	The primary mechanism at work is electron recombination at or near the surface of water drops, thereby artificially reducing the electron number density in the plasma. %TODO citation needed.
+	
+	\subsubsection*{Magnetic Windows}
+		
+	\subsubsection*{Lorentz Windows}
+	
+	\subsubsection*{Stokes Waves}
+	
 
+	
+	
 \section{Prior Research} \label{sec:Prior}
 	\subsection*{NASA RAM Studies}
 	Radio wave attenuation in plasma sheaths and various methods of preventing it have been studied since at least the early 1960's.
@@ -162,11 +237,14 @@ $K$ is the Boltzmann constant, $T_e$ is the electron fluid temperature, and $n_1
 	The tests consisted of launching a reentry vehicle packed with plasma and radio diagnostic experiments on three and four-staged sounding rockets on a sub-orbital trajectory.
 	The RAM A and B campaigns were comprised of four test flights which studied the reentry plasma sheath at a reentry velocity of 5.5 km/s (18,000 ft/s).\cite{huber_entry_1971}
 	The two RAM A flights primarily studied aerodynamic shaping and magnetic window techniques, while the three RAM B flights studied water quenching and advanced study of the plasma sheath.
-	The four RAM C flights reentered at 7.6 km/s (25,000 ft/s), which is comparable to low Earth orbit reentry velocities of around 8 km/s. 
-	The RAM C flights studied advanced plasma diagnostics as well as liquid quenching.\cite{huber_entry_1971}
-
+	The four RAM C flights reentered at 7.6 km/s (25,000 ft/s), which is comparable to low Earth orbit reentry velocities of around 8 km/s.
+	The RAM C flights studied advanced plasma diagnostics as well as liquid quenching.\cite{huber_entry_1971}.
+	
+	\subsection*{Gemini Reentries}
+	
 
 \section{Active Solutions} \label{sec:Solutions}
+	
 \subsection*{Lorentz Windows}
 \subsection*{Stokes Waves}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.16)  20 SEP 2016 14:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.16)  12 OCT 2016 19:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -792,34 +792,34 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 
 LaTeX Warning: Marginpar on page 1 moved.
 
-(./equation_sheet.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
- [1
+(./equation_sheet.bbl [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}pdfTeX warning (ext4): desti
-nation with the same identifier (name{cite.kim_analysis_2008}) has been already
- used, duplicate ignored
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 76.
+
+[2pdfTeX warning (ext4): destination with the same identifier (name{cite.kim_an
+alysis_2008}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.72 \end{document}
+l.76 \end{document}
                    ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
  (./equation_sheet.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 76.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 76.
 Package rerunfilecheck Info: File `equation_sheet.out' has not changed.
 (rerunfilecheck)             Checksum: E1DA8CFBBF7658569637843743A3AD6B;323.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
  ) 
 Here is how much of TeX's memory you used:
- 13563 strings out of 493304
- 190537 string characters out of 6139870
- 379252 words of memory out of 5000000
- 16742 multiletter control sequences out of 15000+600000
- 48264 words of font info for 90 fonts, out of 8000000 for 9000
+ 13579 strings out of 493304
+ 190736 string characters out of 6139870
+ 380318 words of memory out of 5000000
+ 16749 multiletter control sequences out of 15000+600000
+ 60204 words of font info for 99 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 46i,11n,45p,276b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,11n,45p,276b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
@@ -829,10 +829,10 @@ lic/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplri
 j8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on equation_sheet.pdf (1 page, 88495 bytes).
+Output written on equation_sheet.pdf (2 pages, 94737 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
+ 15 named destinations out of 1000 (max. 500000)
+ 1041 words of extra memory for PDF output out of 10000 (max. 10000000)
 
