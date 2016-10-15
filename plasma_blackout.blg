@@ -8,45 +8,45 @@ Warning--empty booktitle in hartunian_implications_2007
 Warning--empty booktitle in oaida_optical_2014
 Warning--empty booktitle in abrahamson_achieving_2015
 Warning--empty institution in huber_entry_1971
-You've used 13 entries,
+You've used 18 entries,
             1876 wiz_defined-function locations,
-            553 strings with 5956 characters,
-and the built_in function-call counts, 3238 in all, are:
-= -- 319
-> -- 127
+            583 strings with 7045 characters,
+and the built_in function-call counts, 4595 in all, are:
+= -- 451
+> -- 188
 < -- 4
-+ -- 48
-- -- 35
-* -- 234
-:= -- 466
-add.period$ -- 16
-call.type$ -- 13
-change.case$ -- 11
++ -- 70
+- -- 52
+* -- 338
+:= -- 658
+add.period$ -- 21
+call.type$ -- 18
+change.case$ -- 16
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 161
-empty$ -- 304
-format.name$ -- 35
-if$ -- 766
+cite$ -- 23
+duplicate$ -- 235
+empty$ -- 423
+format.name$ -- 52
+if$ -- 1094
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 12
-newline$ -- 45
-num.names$ -- 13
-pop$ -- 53
+int.to.str$ -- 18
+missing$ -- 17
+newline$ -- 60
+num.names$ -- 18
+pop$ -- 67
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 97
+skip$ -- 150
 stack$ -- 0
-substring$ -- 218
-swap$ -- 57
+substring$ -- 294
+swap$ -- 90
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 5
-while$ -- 27
-width$ -- 15
-write$ -- 121
+while$ -- 39
+width$ -- 20
+write$ -- 169
 (There were 5 warnings)

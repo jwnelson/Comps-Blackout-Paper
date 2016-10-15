@@ -59,6 +59,10 @@ This theory, combined with the additional theory of waves in plasmas presented i
 Vehicles traveling through an atmosphere at speeds greater than Mach 5 create strong shock waves in front of them which generates varying amounts of plasma from atmospheric gases.
 The generation of this plasma, and its enveloping of the entire vehicle in a sheath, is what prevents radio signals from reaching or leaving the vehicle.
 
+\begin{figure}[H]
+	\centering
+	%\includegraphics[width=0.45\textwidth]{}
+\end{figure}
 \subsection*{Properties of Hypersonic Plasma Sheaths}
 Plasma is a state of matter which is characterized by free-flowing negatively-charged electrons, positive ions, and other neutral atoms and particles.
 The free electrons and ions give plasma unique electromagnetic properties not seen in the other states of matter.
@@ -104,7 +108,7 @@ The theory of how electromagnetic waves propagate in and interact with a plasma 
 What follows is an overview of the physics of electromagnetic and Langmuir waves in plasmas.
 For a more detailed and comprehensive introduction to the topic, see chapter 4 of \cite{chen_introduction_1984}, chapter 6 of \cite{papas_theory_1965}, and chapter 9 of \cite{fitzpatrick_maxwells_2008}.
 
-\subsection{Electromagnetic Waves in a Vacuum}
+\subsection*{Electromagnetic Waves in a Vacuum}
 Before looking at how a plasma effects the propagation of an electromagnetic wave, we first look at how a wave travels in a vacuum.
 We start with Maxwell's equations in a vacuum given by:
 
@@ -144,8 +148,12 @@ Substituting (\ref{eq:PartialVacCurlB}) into (\ref{eq:CurlVacCurlE}),
 	\nabla \times ( \nabla \times \mathbf{E}) = -\frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} 
 \end{equation}
 
-Using the vector identity $\nabla \times (\nabla \times \mathbf{E}) = \nabla(\nabla \cdot \mathbf{E}) - \nabla^2\mathbf{E}$,
-
+Using the vector identity
+\begin{equation}
+	\label{eq:NablaIdent}
+	\nabla \times (\nabla \times \mathbf{E}) = \nabla(\nabla \cdot \mathbf{E}) - \nabla^2\mathbf{E}
+\end{equation}
+And acknowledging that Maxwell's Equations say that $\nabla \cdot \mathbf{E} = 0$:
 \begin{equation}
 	\label{eq:VacWaveEqtn}
 	\nabla^2\mathbf{E} - \frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} = 0
@@ -159,7 +167,7 @@ This is the wave equation for the electric field, with
 The plane wave solutions of this equation take the form $e^{i(\mathbf{k} \cdot \mathbf{r} - \omega t)}$, which when substituted into \ref{eq:VacWaveEqtn} results in
 
 \begin{equation}
-	-\omega^2\mathbf{E} + c^2k^2\mathbf{E}
+	k^2\mathbf{E} - \frac{\omega^2}{c^2}\mathbf{E} = 0
 \end{equation}
 Which reduces to the dispersion relation of the wave given by
 \begin{equation}
@@ -168,8 +176,9 @@ Which reduces to the dispersion relation of the wave given by
 
 The quantity $c$ is the phase velocity $\frac{\omega}{k}$ of the light waves which in a vacuum is, of course, the speed of light in a vacuum given by $c = \frac{1}{\sqrt{\mu_0\epsilon_0}}$.
 
-\subsection{Electromagnetic Waves in a Plasma}
-If we consider an electromagnetic wave traveling through a medium such as a plasma, we must include the extra term $\mathbf{j_1}/\epsilon_0$ in equation (\ref{eq:MaxVacCurlE}) to account for the currents of charged particle motions.
+\subsection*{Electromagnetic Waves in a Plasma}
+Our goal now is to find the dispersion relation of an electromagnetic wave traveling through an unmagnetized plasma.
+Since the wave now propagates through a plasma, we must include the extra term $\mathbf{j}/\epsilon_0$ in equation (\ref{eq:MaxVacCurlE}) to account for the currents of charged particle motions.
 Our relevant Maxwell's equations \ref{eq:MaxVacCurlB} and \ref{eq:MaxVacCurlB} then become:
 \begin{equation}
 	\label{eq:MaxPlasCurlE}
@@ -177,29 +186,113 @@ Our relevant Maxwell's equations \ref{eq:MaxVacCurlB} and \ref{eq:MaxVacCurlB} t
 \end{equation}
 \begin{equation}
 	\label{eq:MaxPlasCurlB}
-	\nabla \times \mathbf{B} = \frac{1}{c} (\frac{\partial \mathbf{E}}{\partial t} + \frac{\mathbf{j_1}}{\epsilon_0})
+	\nabla \times \mathbf{B} = \frac{1}{c} (\frac{\partial \mathbf{E}}{\partial t} + \frac{\mathbf{j}}{\epsilon_0})
 \end{equation}
 
+Once again taking the curl of (\ref{eq:MaxPlasCurlE}) and applying the vector identity in (\ref{eq:NablaIdent}):
+\begin{equation}
+	\nabla \times (\nabla \times \mathbf{E}) = \nabla(\nabla \cdot \mathbf{E}) - \nabla^2 \mathbf{E} = -\frac{1}{c}\nabla \times \frac{\partial \mathbf{B}}{\partial t}
+\end{equation}
+
+And taking the time derivative of (\ref{eq:MaxPlasCurlB}):
+\begin{equation}
+	\label{eq:PlasCurlPartialB}
+	\nabla \times \frac{\partial \mathbf{B}}{\partial t} = \frac{1}{c}(\frac{\partial^2 \mathbf{E}}{\partial t^2} + \frac{1}{\epsilon_0} \frac{\partial \mathbf{j}}{\partial t})
+\end{equation}
+
+We finally substitute (\ref{eq:PlasCurlPartialB}) into (\ref{eq:MaxPlasCurlE}) and arrive at the wave equation
+
+\begin{equation}
+	\nabla^2 \mathbf{E} = \frac{1}{c^2}(\frac{\partial^2 \mathbf{E}}{\partial t^2} + \frac{1}{\epsilon_0} \frac{\partial \mathbf{j}}{\partial t})
+\end{equation}
+
+Substituting the plane wave solution $e^{i(\mathbf{k} \cdot \mathbf{r} - \omega t)}$ for \textbf{E}:
+\begin{equation}
+	\label{eq:PlasPlaneWave1}
+	k^2\mathbf{E} = \frac{\omega^2}{c^2}\mathbf{E} + \frac{i\omega}{\epsilon_0 c^2}\mathbf{j}
+\end{equation}
+In this case, we are considering radio and microwave radiation with frequencies on the order of $10^6$ to $10^9$.
+Because the frequency of the radiation is so high, the ions in the plasma can be considered fixed in space, and the current $\mathbf{j}$ comes entirely from electron motion:
+ 
+\begin{equation}
+	\mathbf{j} = -n_0e\mathbf{v_e}
+\end{equation}
+From the linearized electron equation of motion with negligible thermal motion such that $KT_e = 0$:
+\begin{equation}
+	m_e\frac{\partial \mathbf{v_e}}{\partial t} = -e\mathbf{E}
+\end{equation}
+\begin{equation}
+	\mathbf{v_e} = \frac{e\mathbf{E}}{im_e\omega}
+\end{equation}
+Thus the electron current $\mathbf{j}$ is given by:
+\begin{equation}
+	\mathbf{j} = -n_0e^2\frac{\mathbf{E}}{im_e\omega}
+\end{equation}
+Substituting this back into the plane wave equation (\ref{eq:PlasPlaneWave1})
+\begin{equation}
+	k^2\mathbf{E} = \frac{\omega^2}{c^2}\mathbf{E} - \frac{i\omega}{\epsilon_0 c^2}n_0e^2\frac{\mathbf{E}}{im_e\omega}
+\end{equation}
+Which reduces to:
+\begin{equation*}
+	c^2k^2 = \omega^2 - \frac{n_0e^2}{\epsilon_0m_e}
+\end{equation*}
+Comparing this to equation (\ref{plasma_f}), we see that the second term on the right is just the plasma frequency squared, and so we arrive at the dispersion relation
+\begin{equation}
+	\omega^2 = \omega^2_p + c^2k^2
+\end{equation}
+
+The wave number for an electromagnetic wave propagating through a plasma is then given by:
+\begin{equation}
+	\label{eq:EMWaveNumber}
+	k = \frac{1}{c}\sqrt{1-\frac{\omega^2_p}{\omega^2}}	
+\end{equation}
+Where $\omega_p$ is the plasma frequency, and $\omega$ is the frequency if the electromagnetic wave.
+
+Examining equation \ref{eq:EMWaveNumber}, we can see that there are three special cases of $k$ that are dependent on the ratio $\omega_p/\omega$:
+\begin{description}
+	\item [Case 1]$\omega > \omega_p \Rightarrow$ k is real.
+	\item [Case 2]$\omega < \omega_p \Rightarrow$ k is imaginary.
+	\item [Case 3]$\omega = \omega_p \Rightarrow$ k is zero.
+\end{description}
+
+In case one where the frequency of the wave is greater than the plasma frequency, the wave will propagate through the plasma (one-dimensionally in the $x$-direction) according to the wave equation $E(x,t) = Ae^{i(kx - \omega t)}$
+
+In case two, the wave frequency is less than the plasma frequency, which results in an imaginary wave number $k = i\gamma$.
+Substituting this into the wave equation:
+\begin{equation}
+	E(x,t) = e^{i(i\gamma)x - i\omega t} = e^{-\gamma x}e^{i\omega t}
+\end{equation}
+Thus, the effect on the electromagnetic wave is that it is exponentially damped according to $e^{-\gamma x}$ as it travels through the plasma.
+
+In the third case, where the wave frequency equals the plasma frequency, the wave number is exactly zero, and the wave is reflected by the plasma.
+
+To illustrate the importance of this, imagine a radio wave emitted by a ground station traveling to a reentering spacecraft.
+As the radio wave comes into contact with the plasma flow-field, the outer portion of the plasma sheath will be less dense, and therefore have a lower frequency than the radio wave, and so the wave propagates through the plasma initially.
+As it travels further into the plasma flow, the plasma becomes denser, and its frequency increases until the plasma frequency equals the radio wave's frequency.
+At this point, further travel into the plasma sheath will be damped exponentially, and the radio wave will be reflected.
+This is the primary mechanism by which the radio blackout occurs.
+\subsection*{Plasma Oscillations}
 The general electron fluid equation of motion in the presence of an electric field is given by
 \begin{equation} \label{eq:emotionhot}
 m_en_e \lbrack \frac{\partial \mathbf{v_e}}{\partial t} + \left( \mathbf{v_e} \cdot \mathbf{\nabla} \right) \mathbf{v_e} \rbrack = -en_e\mathbf{E} - \nabla p
 \end{equation}
 Where $m_e$ is the mass of the electron, $n_e$ is the electron number density, $\mathbf{v_e}$ is the average electron velocity, $e$ is the electron charge, $\mathbf{E}$ is the electric field acting on the electron, and $p$ is the thermal motion pressure.
 
-We can derive two very different behaviors of the plasma from Equation \ref{eq:emotionhot} depending on whether we retain the pressure gradient term $\nabla p$.
+We can derive two very different behaviors of the plasma from Equation (\ref{eq:emotionhot}) depending on whether we retain the pressure gradient term $\nabla p$.
 
-If the pressure gradient term is ignored, we can derive a wave equation for the electrons with a frequency given by the plasma frequency in Equation \ref{plasma_f}.
-Furthermore, the 
-These plasma oscillations induced by an external force do not propagate forward into the plasma and remain local to individual electron-ion pairs.
+If we ignore the thermal motion of the electrons and, therefore, the pressure gradient term, we can derive a wave equation for the electrons with a frequency given by the plasma frequency in Equation (\ref{plasma_f}).
+Furthermore, these plasma oscillations induced by an external force do not propagate forward into the plasma and remain local to individual electron-ion pairs.
 
-If thermal motion is considered, the pressure gradient term of the electron fluid must be included in the equation of motion of the electrons, and the resulting wave equation 
+If thermal motion is considered, the pressure gradient term of the electron fluid must be included in the equation of motion of the electrons, and the resulting wave equation shows that the oscillation does in fact propagate through the plasma as a plasma wave.
+Plasma waves are also referred to as Langmuir waves.
+
+In this section, we will consider the first case, where thermal motion is ignored and the plasma oscillations remain stationary.
+In the next section, we will consider the latter case where thermal motion is significant and plasma disturbances do propagate as Langmuir waves.
 
 
-If the pressure gradient term is included, 
-\subsection*{Plasma Oscillations}
-The plasma frequency given by equation \ref{plasma_f} is a fundamental property of a plasma and important to the radio blackout problem, as was discussed in \S\ref{sec:PlasmaSheaths}.
-As was previously stated, the plasma frequency represents the natural frequency of free electrons in a non-ionized plasma.
-We will only summarize the derivation of the plasma frequency equation below, but a full derivation from fundamentals is given in \S\cite{chen_introduction_1984}.
+The plasma frequency given by equation (\ref{plasma_f}) is a fundamental property of a plasma and important to the radio blackout problem, as was discussed in \S\ref{sec:PlasmaSheaths}.
+The plasma frequency represents the natural frequency of free electrons in a non-ionized plasma.
+We will only summarize the derivation of the plasma frequency equation below, but a full derivation from fundamentals is given in \cite{chen_introduction_1984}.
 
 When electrons in a homogeneous non-ionized plasma are displaced, Coulomb forces between electrons and positive ions build up electric fields which restore the net-neutrality of the plasma.
 The restoring forces return electrons towards equilibrium with respect to the ions, but the inertia of the electrons cause them to overshoot the ions and begin to oscillate.
@@ -217,15 +310,17 @@ The electron equation of motion resulting from the restoring Coulomb forces is g
 \begin{equation} \label{eq:emotion}
 	mn_e \lbrack \frac{\partial \mathbf{v_e}}{\partial t} + \left( \mathbf{v_e} \cdot \mathbf{\nabla} \right) \mathbf{v_e} \rbrack = -en_e\mathbf{E}
 \end{equation}
-The right-hand side of equation \ref{eq:emotion} represents the restoring force of the unbalanced electric fields.
-% TODO - Describe the terms of the equation of motion more completely
+The right-hand side of equation \ref{eq:emotion} represents the restoring force of the unbalanced electric fields, and the first term on the left-hand side is a simple $m\cdot\mathbf{a}$ expression.
+The second term on the left encapsulates the bulk fluid motion of the electrons in the plasma field.
 
-If we linearize Equation \ref{eq:emotion} and assume the oscillation of the electrons is small, the higher order terms of $\left(\mathbf{v_e} \cdot \nabla \right) \mathbf{v_e}$ can be ignored, and the term entire term can be ignored.
-The equation of motion the
+If we linearize Equation \ref{eq:emotion} and assume the oscillation of the electrons is small, the term $\left(\mathbf{v_e} \cdot \nabla \right) \mathbf{v_e}$ can be ignored.
+The equation of motion then reduces to:
+\begin{equation}
+	mn_e \frac{\partial \mathbf{v_e}}{\partial t} = -e_ne \mathbf{E}
+\end{equation}
 
 \subsection*{Plasma (Langmuir) Waves}
 % PLACEHOLDER - 'Hot' electron and Langmuir wave discussion
-$K$ is the Boltzmann constant, $T_e$ is the electron fluid temperature, and $n_1$ is the number of perturbed electrons, that is, the number of electrons displaced from equilibrium by some external force.
 
 
 
@@ -278,7 +373,7 @@ $K$ is the Boltzmann constant, $T_e$ is the electron fluid temperature, and $n_1
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.45\textwidth]{Images/intro-atmospheric.png}
-	\caption{\textbf{Atmospheric attenuation of radio waves by wavelength. Radio bandwidths are shown along the bottom horizontal axis.\cite{altshuler_comparison_1988}}}
+	\caption{\textbf{Atmospheric attenuation of radio waves by wavelength. Radio bandwidths are shown along the bottom horizontal axis.\cite{altshuler_comparison_1988} \copyright IEEE 1988.}}
 	\label{fig:RadioAttenuation}
 	\end{figure}
 	
@@ -293,11 +388,32 @@ $K$ is the Boltzmann constant, $T_e$ is the electron fluid temperature, and $n_1
 	The primary mechanism at work is electron recombination at or near the surface of water drops, thereby artificially reducing the electron number density in the plasma. %TODO citation needed.
 	
 	\subsubsection*{Magnetic Windows}
-		
+	
+	
 	\subsubsection*{Lorentz Windows}
+	The Lorentz window method uses crossed electric and magnetic fields to create a local region of relatively low density in the plasma sheath over an antenna on the vehicle, thereby lowering the plasma frequency and creating a window through which a radio wave could transmit and receive.
+	The method is named so because the primary mechanism is the Lorentz force to transport electrons.
+	
+	We will look at Lorentz windows along with Stokes waves in more detail in \S\ref{sec:Solutions}.
+	Here we will just summarize recent research efforts, as well as its benefits and detractions.
+	
+	Kim et. al. have developed computer numerical simulations of a possible Lorentz window configuration using static crossed electric and magnetic fields on the surface of a vehicle.\cite{kim_plasma_2007}\cite{kim_analysis_2008}\cite{kim_modeling_2010}
+	The basic concept involves placing an antenna under the volume of the plasma flow-field with reduced plasma density due to the electron removal of the electric and magnetic fields.
+	The configuration proposed by Kim et. al. is shown in figure \ref{fig:KimExBConfig}.
+	Because smaller magnetic fields on the order $0.1 T$ are required to achieve an effect, this method could be more feasible than using magnetic fields alone, which require magnetic field strengths of at least 2T to affect the plasma flow-field.\cite{otsu_feasibility_2006}
+	
+	\begin{figure}[H]
+		\centering
+			\includegraphics[width=0.45\textwidth]{Images/Kimetal_ExB_config.png}
+		\caption{\textbf{Proposed configuration of electrodes and magnetic field for a Lorentz window. Figure 1 in \cite{kim_plasma_2007}.}}
+		\label{fig:KimExBConfig}
+	\end{figure}
 	
 	\subsubsection*{Stokes Waves}
-	
+	Most active methods work by affecting the plasma and changing its properties, usually the plasma density, in order to make communication through the plasma more favorable.
+	The Stokes wave method is unique in that it exploits the electromagnetic properties of the plasma itself to use the sheath effectively as an antenna for both transmitting and receiving.
+	Work done by Nazarenko et. al. and Korotkevich et. al. has established a plausible theoretical basis for the Stokes wave technique, though experimental verification is still necessary.\cite{nazarenko_communication_1994}\cite{korotkevich_communication_2007}
+	Nevertheless, the work is promising and worth detailed discussion in \S\ref{sec:Solutions}.
 
 	
 	
@@ -316,10 +432,13 @@ $K$ is the Boltzmann constant, $T_e$ is the electron fluid temperature, and $n_1
 	The four RAM C flights reentered at 7.6 km/s (25,000 ft/s), which is comparable to low Earth orbit reentry velocities of around 8 km/s.
 	The RAM C flights studied advanced plasma diagnostics as well as liquid quenching.\cite{huber_entry_1971}.
 	
-	\subsection*{Gemini Reentries}
+	\subsection*{Gemini Program}
 	
 
-\section{Active Solutions} \label{sec:Solutions}
+\section{Recent Research} \label{sec:Solutions}
+	The focus of the remainder of this paper will be on promising recent research into solving the blackout problem.
+	Work in the last twenty years has focused on developing active methods that can enable effective communication through the plasma barrier without effecting the design or performance of the rest of the system too adversely.
+	We will focus on two particular methods which have been studied in recent years.
 	
 \subsection*{Lorentz Windows}
 \subsection*{Stokes Waves}
