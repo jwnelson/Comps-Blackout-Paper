@@ -13,7 +13,7 @@
 
 \begin{document}
 %opening
-\title{Mitigating the radio blackout effect of plasma sheaths at hypersonic and reentry velocities}
+\title{The radio blackout effect of plasma sheaths at hypersonic and reentry velocities and potential solutions}
 \author{Jack Nelson,\\
 	Physics Department,\\
 	Occidental College, Los Angeles, CA}
@@ -22,34 +22,37 @@
 	\begin{@twocolumnfalse}
 		\maketitle
 			\begin{abstract}
-			Airborne vehicles traveling through an atmosphere at hypersonic velocities, especially in excess of Mach 15, face significant atmospheric heating that produces plasma sheaths which surround the vehicle.
+			 Airborne vehicles traveling through an atmosphere at hypersonic velocities, especially in excess of Mach 15, face significant atmospheric heating that produces plasma sheaths which surround the vehicle.
 			 Depending on the density of the atmosphere, the shape of the vehicle, and its speed, free electrons in the plasma attenuate and reflect incident electromagnetic waves, making communication to and from the hypersonic vehicle difficult or impossible.
 			 Various methods of communicating through the plasma sheath have been proposed and studied since the early 1960's, yet a single elegant solution has not been found in unclassified research to date.
 			 
-			 In this paper, we will establish a theoretical overview of the problem and look at the associated plasma physics in order to better frame the potential solutions.
-			 These solutions can be divided into two types: passive methods, which seek to affect the properties of the plasma sheath using passive features such the shaping of the vehicle, and active methods, which use active systems to communicate through the plasma sheath barrier.
-			 We will examine some of the passive and active solutions that have been proposed, as well as recent studies which propose solving the communications blackout problem using active electromagnetic fields and $\mathbf{E}\times\mathbf{B}$ Lorentz forces.
-			 A method which uses electromagnetic scattering off of resonances induced by radio signals from outside the plasma sheath is presented as a solution that has the potential to minimize weight and equipment volume in the vehicle, yet remain effective.
+			 In this paper, we will establish a theoretical framework of the problem and look at the associated plasma physics in order to better contextualize the potential solutions.
+			 These solutions can be divided into two basic types: passive methods, which minimize blackout conditions through the vehicle or mission design, and active methods, which use active systems to change or exploit the properties of the plasma flow field to communicate through the plasma barrier.
+			 We will examine some of the passive and active solutions that have been proposed, as well as recent studies of active electromagnetic fields and $\mathbf{E}\times\mathbf{B}$ Lorentz forces.
+			 A method which uses scattered Stokes waves and Raman interactions of an electromagnetic ``pump" wave with resonances in the plasma sheath induced by external radio waves is presented as a solution that has the potential to minimize weight and equipment volume in the vehicle, yet remain effective.
 	 
 	
 			\end{abstract}
 		\end{@twocolumnfalse}
 	]
 \section{Introduction}
-	Spacecraft reentering an atmosphere from orbital velocities and aircraft traveling at hypersonic speeds experience the problem of aerodynamic heating, in which their large kinetic energies are transferred into heat by hypersonic interactions with the atmosphere.
-	The problem of convective aerodynamic heating of a reentry vehicle was adequately solved by the first human space flights in the early 1960's.
-	For reentry speeds, was found that blunt bodies as opposed to slender, streamlined ones minimize the total heat which is transferred to the vehicle from the air.\cite{allen_study_1958}
+	Spacecraft reentering an atmosphere from orbit and aircraft traveling at hypersonic speeds experience the problem of aerodynamic heating, in which their large kinetic energies are transferred into heat by hypersonic interactions with the atmosphere.
+	The problem of convective aerodynamic heating of a reentry vehicle was adequately solved by the time of the first human space flights in the early 1960's.
+	For reentry speeds, it was found that blunt bodies as opposed to slender, streamlined ones minimize the total heat which is transferred to the vehicle from the air.\cite{allen_study_1958}
 	Blunt body capsule designs coupled with ablative heat shield technology created a simple yet effective solution to the reentry heating problem which is still widely used today.
+	
 	For hypersonic aircraft which operate at less than reentry speeds, such as NASA's X-15 piloted research vehicle, the heating problem is solved using thick skin heat sinks made of high heat capacity superalloys such as Inconel-X.\cite{stillwell_x-15_1965}
 	
-	A side-effect of the hypersonic heating problem is the generation of large volumes of plasmisized atmospheric gases and the formation of a plasma sheath which envelopes the vehicle at high speeds.
-	The basic properties of plasma sheaths, such as thickness, temperature, and density, are not uniform over the entire sheath, are highly dependent on the vehicle configuration and atmosphere, and are extremely difficult to accurately predict.
+	A side-effect of the hypersonic heating problem is the generation plasmisized atmospheric gases and the formation of a plasma sheath which envelopes the vehicle.
+	The basic properties of plasma sheaths, such as thickness, temperature, and density, are not uniform over the entire sheath. 
+	These properties are also highly dependent on the vehicle configuration and the atmosphere.
+	As a result, they are extremely difficult to accurately predict.
 	
-	An overview of the paper is as follows: \S\ref{sec:PlasmaSheaths} summarizes the basic properties of hypersonic vehicle plasma sheaths and introduces the plasma frequency $\omega_p$ as a fundamental measure of whether a plasma sheath will attenuate a radio wave with carrier frequency $\omega_s$.
+	An overview of the paper is as follows: \S\ref{sec:PlasmaSheaths} summarizes the basic properties of hypersonic vehicle plasma sheaths and introduces the plasma frequency $\omega_p$ as a fundamental measure of whether a plasma sheath will attenuate a radio wave with carrier frequency $\omega$.
 	\S\ref{sec:Waves} gives an overview of electromagnetic waves propagating through a plasma, as well as waves in the plasma medium itself, referred to as Langmuir waves or electron acoustic waves.
 	\S\ref{sec:Overview} divides a number of potential solutions to the blackout problem into active and passive methods, and briefly evaluates each one.
-	\S\ref{sec:Prior} summarizes past research into the radio blackout problem and potential solutions.
-	In \S\ref{sec:Solutions}, we look at a few promising solutions that have been studied in the last two decades which could potentially solve the radio blackout problem with minimal impact to the rest of a vehicle's systems and design.
+	\S\ref{sec:Prior} summarizes past research.
+	In \S\ref{sec:Solutions}, we look at a few promising solutions that have been studied in the last two decades which could minimally impact the rest of a vehicle's systems and design.
 	
 \section{Plasma Sheaths of Hypersonic Vehicles} \label{sec:PlasmaSheaths}
 In this section, we will summarize the processes by which plasma is generated by a hypersonic vehicle, as well as the characteristic properties of the plasma.
@@ -58,6 +61,20 @@ This theory, combined with the additional theory of waves in plasmas presented i
 \subsection*{Aerothermodynamics of Hypersonic Vehicles}
 Vehicles traveling through an atmosphere at speeds greater than Mach 5 create strong shock waves in front of them which generates varying amounts of plasma from atmospheric gases.
 The generation of this plasma, and its enveloping of the entire vehicle in a sheath, is what prevents radio signals from reaching or leaving the vehicle.
+
+As a critically important problem that needed to be solved for ballistic missile reentry vehicles, the aerodynamic shock heating phenomenon has been studied extensively since the 1950's.\cite{allen_study_1958}\cite{dunn_theoretical_1973}\cite{allen_aerodynamic_1964}\cite{launius_coming_2012}.
+At it's core, the reentry aerothermodynamic problem is the problem of reducing a spacecraft's tremendous orbital kinetic energy to zero.
+As a spacecraft falls through the viscous atmosphere, the vehicle's kinetic energy is transferred to the atmosphere as thermal energy.
+Atmospheric reentry has the benefit of doing most of the work of bringing a spacecraft back down to Earth, whereas on planetary bodies lacking an atmosphere, such as Earth's Moon, a spacecraft must reduce its own velocity using rockets, expending precious fuel.
+
+Of course, in order for atmospheric reentry to be practical, the spacecraft must be somehow insulated from the tremendous heat generated.
+For example, a spacecraft returning from low earth orbit back to Earth's surface must reduce its speed from approximately 8km/s to 0km/s.
+For an Apollo-sized spacecraft of approximately 5,300kg, this translates to approximately 170 Billion Joules ($170GJ$) of energy that must be dissipated into the atmosphere as heat.
+
+Perhaps contrary to what might be expected, it was shown analytically in 1958 by NASA scientist H. Julian Allen that, for reentry velocities up to 11km/s where convective heat transfer dominates over radiative heat transfer, a blunt spacecraft design approaching that of a sphere is more desirable over a narrow, streamlined design to minimize heat transfer to the spacecraft.\cite{allen_study_1958}\cite{allen_aerodynamic_1964}.
+
+The ``blunt body" design of reentry vehicles
+
 
 \begin{figure}[H]
 	\centering
@@ -73,17 +90,17 @@ An important characteristic property of a plasma is its plasma frequency $\omega
 \end{equation}
 where $e$ is the charge of the electron, $\epsilon_0$ is the permitivity of free space, and $m_e$ is the mass of the electron. 
 The quantity $n_e$ is the density of electrons in the plasma.\cite{chen_introduction_1984,kim_analysis_2008}
-Equation \ref{plasma_f} is interchangeably referred to as the plasma frequency and plasma electron frequency. The plasma frequency given is the resonance frequency of the free electrons about positive ions in the plasma when disturbed by an electromagnetic force such as a radio wave.\cite{chen_introduction_1984}
+Equation (\ref{plasma_f}) is interchangeably referred to as the plasma frequency and plasma electron frequency. The plasma frequency given is the resonance frequency of the free electrons about positive ions in the plasma when disturbed by an electromagnetic force such as a radio wave.\cite{chen_introduction_1984}
 
-Since all factors except $n_e$ on the right hand side of  Equation \ref{plasma_f} are constants, Equation \ref{plasma_f} can be simplified and approximated to
+Since all factors except $n_e$ on the right hand side of  Equation (\ref{plasma_f}) are constants, Equation (\ref{plasma_f}) can be simplified and approximated to
 \begin{equation} \label{plasmafapprox}
 \omega_p \approx 18\pi\sqrt{n_e}
 \end{equation}
 As we can see from Equation \ref{plasmafapprox}, the plasma frequency is only dependent on the density of electrons in the plasma, which will hereafter be referred to as the plasma density.
 
 As will be shown in \S\ref{sec:Waves}, the plasma frequency is fundamentally important to the radio blackout problem because it is the transmission cutoff frequency for radio waves propagating through a plasma sheath.
-A radio wave with carrier frequency $\omega_s$ that is greater than the plasma frequency $\omega_p$ will propagate through the sheath and reach the vehicle with minor attenuation if any at all, and vice versa from the vehicle to an outside receiver.
-Signal radio waves with frequencies less than or equal to the plasma frequency, on the other hand, will be totally attenuated by and reflected off the plasma sheath, preventing any signals from reaching or leaving the vehicle enveloped in the sheath.
+A radio wave with carrier frequency $\omega$ that is greater than the plasma frequency $\omega_p$ will propagate through the sheath and reach the vehicle with minor attenuation if any at all, and vice versa from the vehicle to an outside receiver.
+Radio waves with frequencies less than or equal to the plasma frequency, on the other hand, will be totally attenuated by and reflected off the plasma sheath, preventing any signals from reaching or leaving the vehicle enveloped in the sheath.
 
 The electron density of a plasma sheath is notoriously difficult to predict and not uniform over the entire sheath.
 The plasma density is roughly proportional to the vehicle's velocity and the local atmospheric density.
@@ -100,11 +117,11 @@ For more information on the RAM program and results, see \S\ref{sec:Prior}.
 
 Data taken during the reentry of Mercury 6 at 7.3 km/s (24,000 ft/s) found the peak frequency of the plasma sheath around the location of the antennas to be about 500 GHz, which corresponds to a peak plasma density of $2.11*10^{21} \  m^{-3}$.
 The VHF radio blackout duration for Mercury 6 lasted approximately 4.5 minutes from 90 km to 40 km in altitude.
-In the stagnation region of the vehicle, the plasma frequency was found to peak at 6,000 GHz, corresponding to a plasma density of $5*10^{23} m^{-3}$. \cite{lehnert_plasma_1964}
+In the stagnation region of the hypersonic flow field, the plasma frequency was found to peak at 6,000 GHz, corresponding to a plasma density of $5*10^{23} m^{-3}$. \cite{lehnert_plasma_1964}
 
 
 \section{Physics of Waves in Plasma} \label{sec:Waves}
-The theory of how electromagnetic waves propagate in and interact with a plasma is important to understanding potential solutions of the radio blackout problem.
+The theory of how electromagnetic waves propagate through and interact with a plasma is important to understanding potential solutions of the radio blackout problem.
 What follows is an overview of the physics of electromagnetic and Langmuir waves in plasmas.
 For a more detailed and comprehensive introduction to the topic, see chapter 4 of \cite{chen_introduction_1984}, chapter 6 of \cite{papas_theory_1965}, and chapter 9 of \cite{fitzpatrick_maxwells_2008}.
 
@@ -128,7 +145,7 @@ We start with Maxwell's equations in a vacuum given by:
 \end{equation}
 
 The last two equations are the relevant ones in this situation.
-If we take the curl of equation \ref{eq:MaxVacCurlE} and the partial time derivative of equation \ref{eq:MaxVacCurlB}, we have
+If we take the curl of equation (\ref{eq:MaxVacCurlE}) and the partial time derivative of equation (\ref{eq:MaxVacCurlB}), we have
 
 \begin{equation}
 	\label{eq:CurlVacCurlE}
@@ -141,31 +158,27 @@ If we take the curl of equation \ref{eq:MaxVacCurlE} and the partial time deriva
 	\label{eq:PartialVacCurlB}
 	\nabla \times \frac{\partial \mathbf{B}}{\partial t} = \frac{1}{c} \frac{\partial^2 \mathbf{E}}{\partial t^2}
 \end{equation}
-
 Substituting (\ref{eq:PartialVacCurlB}) into (\ref{eq:CurlVacCurlE}),
-
 \begin{equation}
 	\nabla \times ( \nabla \times \mathbf{E}) = -\frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} 
 \end{equation}
-
 Using the vector identity
 \begin{equation}
 	\label{eq:NablaIdent}
 	\nabla \times (\nabla \times \mathbf{E}) = \nabla(\nabla \cdot \mathbf{E}) - \nabla^2\mathbf{E}
 \end{equation}
-And acknowledging that Maxwell's Equations say that $\nabla \cdot \mathbf{E} = 0$:
+And the Maxwell Equation $\nabla \cdot \mathbf{E} = 0$, we have:
 \begin{equation}
 	\label{eq:VacWaveEqtn}
 	\nabla^2\mathbf{E} - \frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2} = 0
 \end{equation}
-This is the wave equation for the electric field, with
-
+Equation (\ref{eq:VacWaveEqtn}) is the wave equation for the electric field in a vacuum, with
 \begin{equation}
 	c^2 = \frac{1}{\epsilon_0 \mu_0}
 \end{equation}
 
-The plane wave solutions of this equation take the form $e^{i(\mathbf{k} \cdot \mathbf{r} - \omega t)}$, which when substituted into \ref{eq:VacWaveEqtn} results in
-
+The plane wave solutions of this equation take the form $\mathbf{E}(\mathbf{r}, t) = e^{i(\mathbf{k} \cdot \mathbf{r} - \omega t)}$, where $\mathbf{k}$ is the wave vector which points in the direction of the phase velocity, and $\mathbf{r}$ is the position vector.
+When the plane wave solution is substituted into (\ref{eq:VacWaveEqtn}), we arrive at
 \begin{equation}
 	k^2\mathbf{E} - \frac{\omega^2}{c^2}\mathbf{E} = 0
 \end{equation}
@@ -179,7 +192,7 @@ The quantity $c$ is the phase velocity $\frac{\omega}{k}$ of the light waves whi
 \subsection*{Electromagnetic Waves in a Plasma}
 Our goal now is to find the dispersion relation of an electromagnetic wave traveling through an unmagnetized plasma.
 Since the wave now propagates through a plasma, we must include the extra term $\mathbf{j}/\epsilon_0$ in equation (\ref{eq:MaxVacCurlE}) to account for the currents of charged particle motions.
-Our relevant Maxwell's equations \ref{eq:MaxVacCurlB} and \ref{eq:MaxVacCurlB} then become:
+Our relevant Maxwell's equations (\ref{eq:MaxVacCurlE}) and (\ref{eq:MaxVacCurlB}) then become:
 \begin{equation}
 	\label{eq:MaxPlasCurlE}
 	\nabla \times \mathbf{E} = -\frac{1}{c} \frac{\partial \mathbf{B}}{\partial t}
@@ -191,6 +204,7 @@ Our relevant Maxwell's equations \ref{eq:MaxVacCurlB} and \ref{eq:MaxVacCurlB} t
 
 Once again taking the curl of (\ref{eq:MaxPlasCurlE}) and applying the vector identity in (\ref{eq:NablaIdent}):
 \begin{equation}
+	\label{eq:PlasCurlCurlE}
 	\nabla \times (\nabla \times \mathbf{E}) = \nabla(\nabla \cdot \mathbf{E}) - \nabla^2 \mathbf{E} = -\frac{1}{c}\nabla \times \frac{\partial \mathbf{B}}{\partial t}
 \end{equation}
 
@@ -200,24 +214,26 @@ And taking the time derivative of (\ref{eq:MaxPlasCurlB}):
 	\nabla \times \frac{\partial \mathbf{B}}{\partial t} = \frac{1}{c}(\frac{\partial^2 \mathbf{E}}{\partial t^2} + \frac{1}{\epsilon_0} \frac{\partial \mathbf{j}}{\partial t})
 \end{equation}
 
-We finally substitute (\ref{eq:PlasCurlPartialB}) into (\ref{eq:MaxPlasCurlE}) and arrive at the wave equation
+We finally substitute (\ref{eq:PlasCurlPartialB}) into (\ref{eq:PlasCurlCurlE}) and arrive at the wave equation
 
 \begin{equation}
 	\nabla^2 \mathbf{E} = \frac{1}{c^2}(\frac{\partial^2 \mathbf{E}}{\partial t^2} + \frac{1}{\epsilon_0} \frac{\partial \mathbf{j}}{\partial t})
 \end{equation}
 
-Substituting the plane wave solution $e^{i(\mathbf{k} \cdot \mathbf{r} - \omega t)}$ for \textbf{E}:
+Substituting the plane wave solution $\mathbf{E} = e^{i(\mathbf{k} \cdot \mathbf{r} - \omega t)}$:
 \begin{equation}
 	\label{eq:PlasPlaneWave1}
 	k^2\mathbf{E} = \frac{\omega^2}{c^2}\mathbf{E} + \frac{i\omega}{\epsilon_0 c^2}\mathbf{j}
 \end{equation}
 In this case, we are considering radio and microwave radiation with frequencies on the order of $10^6$ to $10^9$.
-Because the frequency of the radiation is so high, the ions in the plasma can be considered fixed in space, and the current $\mathbf{j}$ comes entirely from electron motion:
+Because the radiation frequency is high, the ions in the plasma can be considered fixed in space, and the current $\mathbf{j}$ comes entirely from electron motion:
  
 \begin{equation}
-	\mathbf{j} = -n_0e\mathbf{v_e}
+	\mathbf{j} = -n_ee\mathbf{v_e}
 \end{equation}
-From the linearized electron equation of motion with negligible thermal motion such that $KT_e = 0$:
+Where $n_e$ is the electron number density, $e$ is the charge of the electron, and $\mathbf{v_e}$ is the average electron velocity in the plasma.
+
+From the linearized electron equation of motion with negligible thermal motion such that $KT_e = 0$, we have
 \begin{equation}
 	m_e\frac{\partial \mathbf{v_e}}{\partial t} = -e\mathbf{E}
 \end{equation}
@@ -226,15 +242,15 @@ From the linearized electron equation of motion with negligible thermal motion s
 \end{equation}
 Thus the electron current $\mathbf{j}$ is given by:
 \begin{equation}
-	\mathbf{j} = -n_0e^2\frac{\mathbf{E}}{im_e\omega}
+	\mathbf{j} = -n_ee^2\frac{\mathbf{E}}{im_e\omega}
 \end{equation}
 Substituting this back into the plane wave equation (\ref{eq:PlasPlaneWave1})
 \begin{equation}
-	k^2\mathbf{E} = \frac{\omega^2}{c^2}\mathbf{E} - \frac{i\omega}{\epsilon_0 c^2}n_0e^2\frac{\mathbf{E}}{im_e\omega}
+	k^2\mathbf{E} = \frac{\omega^2}{c^2}\mathbf{E} - \frac{i\omega}{\epsilon_0 c^2}n_ee^2\frac{\mathbf{E}}{im_e\omega}
 \end{equation}
 Which reduces to:
 \begin{equation*}
-	c^2k^2 = \omega^2 - \frac{n_0e^2}{\epsilon_0m_e}
+	c^2k^2 = \omega^2 - \frac{n_ee^2}{\epsilon_0m_e}
 \end{equation*}
 Comparing this to equation (\ref{plasma_f}), we see that the second term on the right is just the plasma frequency squared, and so we arrive at the dispersion relation
 \begin{equation}
@@ -246,7 +262,7 @@ The wave number for an electromagnetic wave propagating through a plasma is then
 	\label{eq:EMWaveNumber}
 	k = \frac{1}{c}\sqrt{1-\frac{\omega^2_p}{\omega^2}}	
 \end{equation}
-Where $\omega_p$ is the plasma frequency, and $\omega$ is the frequency if the electromagnetic wave.
+Where $\omega_p$ is the plasma frequency, and $\omega$ is the frequency of the electromagnetic wave.
 
 Examining equation \ref{eq:EMWaveNumber}, we can see that there are three special cases of $k$ that are dependent on the ratio $\omega_p/\omega$:
 \begin{description}
@@ -255,7 +271,7 @@ Examining equation \ref{eq:EMWaveNumber}, we can see that there are three specia
 	\item [Case 3]$\omega = \omega_p \Rightarrow$ k is zero.
 \end{description}
 
-In case one where the frequency of the wave is greater than the plasma frequency, the wave will propagate through the plasma (one-dimensionally in the $x$-direction) according to the wave equation $E(x,t) = Ae^{i(kx - \omega t)}$
+In case one where the frequency of the wave is greater than the plasma frequency, the wave will propagate through the plasma (one-dimensionally in the $x$-direction) according to the wave equation $E(x,t) = Ae^{i(kx - \omega t)}$.
 
 In case two, the wave frequency is less than the plasma frequency, which results in an imaginary wave number $k = i\gamma$.
 Substituting this into the wave equation:
@@ -268,7 +284,7 @@ In the third case, where the wave frequency equals the plasma frequency, the wav
 
 To illustrate the importance of this, imagine a radio wave emitted by a ground station traveling to a reentering spacecraft.
 As the radio wave comes into contact with the plasma flow-field, the outer portion of the plasma sheath will be less dense, and therefore have a lower frequency than the radio wave, and so the wave propagates through the plasma initially.
-As it travels further into the plasma flow, the plasma becomes denser, and its frequency increases until the plasma frequency equals the radio wave's frequency.
+As the wave travels further into the plasma sheath, the plasma becomes denser, and its frequency increases until the plasma frequency equals the radio wave's frequency.
 At this point, further travel into the plasma sheath will be damped exponentially, and the radio wave will be reflected.
 This is the primary mechanism by which the radio blackout occurs.
 \subsection*{Plasma Oscillations}
@@ -292,7 +308,7 @@ In the next section, we will consider the latter case where thermal motion is si
 
 The plasma frequency given by equation (\ref{plasma_f}) is a fundamental property of a plasma and important to the radio blackout problem, as was discussed in \S\ref{sec:PlasmaSheaths}.
 The plasma frequency represents the natural frequency of free electrons in a non-ionized plasma.
-We will only summarize the derivation of the plasma frequency equation below, but a full derivation from fundamentals is given in \cite{chen_introduction_1984}.
+We will only summarize the derivation of the plasma frequency equation below, but a full derivation from fundamentals is given in Chapter 4 of \cite{chen_introduction_1984}.
 
 When electrons in a homogeneous non-ionized plasma are displaced, Coulomb forces between electrons and positive ions build up electric fields which restore the net-neutrality of the plasma.
 The restoring forces return electrons towards equilibrium with respect to the ions, but the inertia of the electrons cause them to overshoot the ions and begin to oscillate.
@@ -301,7 +317,7 @@ In the derivation of the plasma frequency, we assume the following:
 \begin{enumerate}
 	\item The plasma is not magnetized.
 	\item There are no thermal motions.
-	\item The ions fixed in space in a uniform distribution due to their greater inertia.
+	\item The ions are fixed in space in a uniform distribution due to their greater inertia.
 	\item The plasma is infinite in extent.
 	\item The electron motions are one dimensional in the $x$ direction.
 \end{enumerate}
@@ -328,7 +344,7 @@ The equation of motion then reduces to:
 \subsection*{Passive Techniques}
 	Passive techniques involve designing the vehicle or mission profile to minimize or eliminate radio blackout.
 \subsection*{Active Techniques}
-	Active methods of solving the radio blackout problem involve active systems which either effect the properties of the plasma sheath to allow radio waves to pass through, or exploit other mechanisms to communicate across the plasma barrier.
+	Active methods of solving the radio blackout problem involve active systems which either affect the properties of the plasma sheath to allow radio waves to pass through, or exploit other mechanisms to communicate across the plasma barrier.
 	Active solutions are of primary interest in current research, and are the focus of discussion in \S\ref{sec:Solutions}.
 	In this section, we'll summarize the most prominent active techniques.
 	
@@ -337,7 +353,7 @@ The equation of motion then reduces to:
 	As was shown in \S\ref{sec:Waves}, electromagnetic waves with frequency higher than the plasma frequency will not be attenuated.
 	In \S\ref{sec:PlasmaSheaths} it was shown that typical orbital reentry peak plasma frequencies range from 3GHz to 500 GHz.
 	
-	Table \ref{tab:RadioBands} shows the common radio frequency band designations and ranges.
+	Table \ref{tab:RadioBands} shows the common radio band designations and frequency ranges.
 	VHF and UHF are most commonly used for aircraft and spacecraft voice and data telemetry, but have relatively low frequencies, making them more susceptible to being attenuated by a plasma sheath.
 	Above VHF and UHF are the microwave bands which are commonly used for spacecraft data transmission and telemetry.
 	As Table \ref{tab:RadioBands} shows, higher frequency bands such as the K band could be used to overcome the radio blackout for hypersonic atmospheric cruise, and reduce or totally remove the duration of low earth orbit reentry blackouts.
@@ -380,7 +396,7 @@ The equation of motion then reduces to:
 	Beyond the microwave band of electromagnetic radiation, the atmosphere becomes transparent again to light waves, posing another possible solution.
 	Research into Earth-to-space high-bandwidth optical communication has been conducted by the NASA Jet Propulsion Lab since 2014.
 	The Optical Payload for Lasercomm Science (OPALS) is an experimental optical communications system currently on-board the International Space Station that is being used to study the feasibility of such communications.
-	The OPALS system uses a 1,550 nm 2.5W laser to communicate with a ground station on Earth, downlinking video data at 50 Mb/s. \cite{oaida_optical_2014}.
+	The OPALS system uses a 1,550nm 2.5W laser to communicate with a ground station on Earth, downlinking video data at 50Mb/s. \cite{oaida_optical_2014}.
 	Initial results have been promising, however there is a strict requirement on pointing accuracy of the laser, unlike radio and microwave signals. \cite{abrahamson_achieving_2015}
 	
 	\subsubsection*{Liquid Quenching}
@@ -391,15 +407,15 @@ The equation of motion then reduces to:
 	
 	
 	\subsubsection*{Lorentz Windows}
-	The Lorentz window method uses crossed electric and magnetic fields to create a local region of relatively low density in the plasma sheath over an antenna on the vehicle, thereby lowering the plasma frequency and creating a window through which a radio wave could transmit and receive.
-	The method is named so because the primary mechanism is the Lorentz force to transport electrons.
+	The Lorentz window method uses crossed electric and magnetic fields to create a local region of relatively low density in the plasma sheath over an antenna on the vehicle, thereby lowering the plasma frequency and creating a window through which radio waves could propagate.
+	The method is named so because the primary mechanism is the transport of electrons using the Lorentz force.
 	
-	We will look at Lorentz windows along with Stokes waves in more detail in \S\ref{sec:Solutions}.
+	We will look at Lorentz windows in more detail in \S\ref{sec:Solutions}.
 	Here we will just summarize recent research efforts, as well as its benefits and detractions.
 	
 	Kim et. al. have developed computer numerical simulations of a possible Lorentz window configuration using static crossed electric and magnetic fields on the surface of a vehicle.\cite{kim_plasma_2007}\cite{kim_analysis_2008}\cite{kim_modeling_2010}
-	The basic concept involves placing an antenna under the volume of the plasma flow-field with reduced plasma density due to the electron removal of the electric and magnetic fields.
-	The configuration proposed by Kim et. al. is shown in figure \ref{fig:KimExBConfig}.
+	The basic concept involves placing an antenna under perpendicular electric and magnetic fields which reduce the plasma density in the volume directly above the antenna by accelerating ions and electrons out of the volume.
+	The configuration proposed by Kim et. al. is shown in Figure \ref{fig:KimExBConfig}.
 	Because smaller magnetic fields on the order $0.1 T$ are required to achieve an effect, this method could be more feasible than using magnetic fields alone, which require magnetic field strengths of at least 2T to affect the plasma flow-field.\cite{otsu_feasibility_2006}
 	
 	\begin{figure}[H]
@@ -411,29 +427,32 @@ The equation of motion then reduces to:
 	
 	\subsubsection*{Stokes Waves}
 	Most active methods work by affecting the plasma and changing its properties, usually the plasma density, in order to make communication through the plasma more favorable.
-	The Stokes wave method is unique in that it exploits the electromagnetic properties of the plasma itself to use the sheath effectively as an antenna for both transmitting and receiving.
+	The Stokes wave method is unique in that it exploits the electromagnetic properties of the plasma itself to effectively use the sheath as an antenna for both transmitting and receiving.
 	Work done by Nazarenko et. al. and Korotkevich et. al. has established a plausible theoretical basis for the Stokes wave technique, though experimental verification is still necessary.\cite{nazarenko_communication_1994}\cite{korotkevich_communication_2007}
 	Nevertheless, the work is promising and worth detailed discussion in \S\ref{sec:Solutions}.
 
 	
 	
 \section{Prior Research} \label{sec:Prior}
-	\subsection*{NASA RAM Studies}
 	Radio wave attenuation in plasma sheaths and various methods of preventing it have been studied since at least the early 1960's.
+	In this section, we review research done since the 1960's to better characterize and understand hypersonic plasma flow fields around a vehicle.
+	We also review past studies done to evaluate potential solutions to the radio blackout problem.
 	
-	NASA's Radio Attenuation Measurement (RAM) project took place over nearly a decade from 1961 until 1970.
+	\subsection*{NASA RAM Studies}
+	NASA's Radio Attenuation Measurement (RAM) program took place over nearly a decade from 1961 until 1970.
 	Project RAM was one of the earliest sustained research efforts specifically targeted at the radio blackout problem for reentering space vehicles, and also the only known flight tests to date specifically to study the phenomenon and potential solutions to it.
 	Since the scope of study was specifically targeted towards the radio blackout problem, and no other comparable flight testing has followed, data and findings from the RAM program are still cited in literature on the subject today.
 	
 	The RAM program consisted of a series of three flight test campaigns and eight flights total.
 	The tests consisted of launching a reentry vehicle packed with plasma and radio diagnostic experiments on three and four-staged sounding rockets on a sub-orbital trajectory.
-	The RAM A and B campaigns were comprised of four test flights which studied the reentry plasma sheath at a reentry velocity of 5.5 km/s (18,000 ft/s).\cite{huber_entry_1971}
-	The two RAM A flights primarily studied aerodynamic shaping and magnetic window techniques, while the three RAM B flights studied water quenching and advanced study of the plasma sheath.
+	The RAM A and B campaigns were comprised of four test flights which studied the plasma sheath at a speed of 5.5 km/s (18,000 ft/s).\cite{huber_entry_1971}
+	The two RAM A flights primarily studied aerodynamic shaping and magnetic window methods, while the three RAM B flights studied water quenching and the plasma flow field.
 	The four RAM C flights reentered at 7.6 km/s (25,000 ft/s), which is comparable to low Earth orbit reentry velocities of around 8 km/s.
 	The RAM C flights studied advanced plasma diagnostics as well as liquid quenching.\cite{huber_entry_1971}.
 	
 	\subsection*{Gemini Program}
 	
+	\subsection*{Space Shuttle}
 
 \section{Recent Research} \label{sec:Solutions}
 	The focus of the remainder of this paper will be on promising recent research into solving the blackout problem.

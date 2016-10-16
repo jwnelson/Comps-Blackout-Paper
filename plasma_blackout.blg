@@ -4,49 +4,51 @@ The top-level auxiliary file: plasma_blackout.aux
 The style file: ieeetr.bst
 Database file #1: plasma_blackout.bib
 Warning--empty journal in allen_study_1958
+Warning--empty institution in dunn_theoretical_1973
+Warning--empty booktitle in allen_aerodynamic_1964
 Warning--empty booktitle in hartunian_implications_2007
 Warning--empty booktitle in oaida_optical_2014
 Warning--empty booktitle in abrahamson_achieving_2015
 Warning--empty institution in huber_entry_1971
-You've used 18 entries,
+You've used 21 entries,
             1876 wiz_defined-function locations,
-            583 strings with 7045 characters,
-and the built_in function-call counts, 4595 in all, are:
-= -- 451
-> -- 188
+            596 strings with 7446 characters,
+and the built_in function-call counts, 5055 in all, are:
+= -- 490
+> -- 208
 < -- 4
-+ -- 70
-- -- 52
-* -- 338
-:= -- 658
-add.period$ -- 21
-call.type$ -- 18
-change.case$ -- 16
++ -- 78
+- -- 57
+* -- 370
+:= -- 730
+add.period$ -- 25
+call.type$ -- 21
+change.case$ -- 19
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 235
-empty$ -- 423
-format.name$ -- 52
-if$ -- 1094
+cite$ -- 28
+duplicate$ -- 262
+empty$ -- 477
+format.name$ -- 57
+if$ -- 1202
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 17
-newline$ -- 60
-num.names$ -- 18
-pop$ -- 67
+int.to.str$ -- 21
+missing$ -- 20
+newline$ -- 70
+num.names$ -- 21
+pop$ -- 82
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 150
+skip$ -- 156
 stack$ -- 0
 substring$ -- 294
-swap$ -- 90
+swap$ -- 91
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 5
-while$ -- 39
-width$ -- 20
-write$ -- 169
-(There were 5 warnings)
+warning$ -- 7
+while$ -- 42
+width$ -- 23
+write$ -- 195
+(There were 7 warnings)
