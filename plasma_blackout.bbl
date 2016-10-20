@@ -9,6 +9,11 @@ H.~J. Allen and A.~J. Eggers, ``A study of the motion and aerodynamic heating
 W.~H. Stillwell, ``X-15 {Research} {Results},'' {NASA} {Technical} {Report}
   SP-60, NASA, 1965.
 
+\bibitem{akey_radio_1970}
+N.~D. Akey and A.~E. Cross, ``Radio {Blackout} {Alleviation} and {Plasma}
+  {Diagnostic} {Results} {From} a 25,000 {Foot} {Per} {Second} {Blunt}-{Body}
+  {Reentry},'' Technical {Note} L-6866, Langley Research Center, Feb. 1970.
+
 \bibitem{dunn_theoretical_1973}
 M.~G. Dunn and S.~Kang, ``Theoretical and experimental studies of reentry
   plasmas,'' {NASA} {Technical} {Report}, Apr. 1973.
@@ -44,15 +49,15 @@ M.~Kim, M.~Keidar, and I.~D. Boyd, ``Analysis of an {Electromagnetic}
   {Mitigation} {Scheme} for {Reentry} {Telemetry} {Through} {Plasma},'' {\em
   Journal of Spacecraft and Rockets}, vol.~45, no.~6, pp.~1223--1229, 2008.
 
-\bibitem{akey_radio_1970}
-N.~D. Akey and A.~E. Cross, ``Radio {Blackout} {Alleviation} and {Plasma}
-  {Diagnostic} {Results} {From} a 25,000 {Foot} {Per} {Second} {Blunt}-{Body}
-  {Reentry},'' Technical {Note} L-6866, Langley Research Center, Feb. 1970.
-
 \bibitem{lehnert_plasma_1964}
 R.~Lehnert and B.~Rosenbaum, ``Plasma {Effects} on {Apollo} {Re}-{Entry}
   {Communication},'' {NASA} {Technical} {Note} D-2732, Goddard Space Flight
   Center, Greenbelt, Maryland, Jan. 1964.
+
+\bibitem{keidar_electromagnetic_2008}
+M.~Keidar, M.~Kim, and I.~Boyd, ``Electromagnetic {Reduction} of {Plasma}
+  {Density} {During} {Atmospheric} {Reentry} and {Hypersonic} {Flights},'' {\em
+  Journal of Spacecraft and Rockets}, vol.~45, no.~3, pp.~445--453, 2008.
 
 \bibitem{papas_theory_1965}
 C.~H. Papas, {\em Theory of {Electromagnetic} {Wave} {Propagation}}.
@@ -62,11 +67,6 @@ C.~H. Papas, {\em Theory of {Electromagnetic} {Wave} {Propagation}}.
 R.~Fitzpatrick, {\em Maxwell's {Equations} and the {Principles} of
   {Electromagnetism}}.
 \newblock Jones and Bartlett Learning, 2008.
-
-\bibitem{huber_entry_1971}
-P.~W. Huber, N.~D. Akey, W.~Crosswell, and C.~Swift, ``The entry plasma sheath
-  and its effects on space vehicle electromagnetic systems,'' {NASA}
-  {Technical} {Note} SP-252, 1971.
 
 \bibitem{altshuler_comparison_1988}
 E.~Altshuler and R.~Marr, ``A comparison of experimental and theoretical values
@@ -88,6 +88,12 @@ M.~J. Abrahamson, B.~V. Oaida, O.~Sindiy, and A.~Biswas, ``Achieving
 \bibitem{evans_reduction_1965}
 J.~S. Evans, ``Reduction of free electron concentration in a reentry plasma by
   injection of liquids,'' (Boston, Massachusetts), Sept. 1965.
+
+\bibitem{schroeder_flight_1968}
+L.~C. Schroeder and F.~P. Russo, ``Flight {Investigation} and {Analysis} of
+  {Alleviation} of {Communications} {Blackout} by {Water} {Injection} {During}
+  {Gemini} 3 {Reentry},'' {NASA} {Technical} {Memorandum}, Langley Research
+  Center, Mar. 1968.
 
 \bibitem{kim_plasma_2007}
 M.~Kim, M.~Keidar, I.~D. Boyd, and D.~Morris, ``Plasma density reduction using
