@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.16)  16 OCT 2016 11:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.16)  19 OCT 2016 17:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -138,34 +138,42 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \c@ContinuedFloat=\count101
 Package caption Info: float package is loaded.
 )
-(./plasma_blackout.aux)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count102
+\c@subtable=\count103
+)
+(./plasma_blackout.aux
+
+LaTeX Warning: Label `subfig:Stokes2' multiply defined.
+
+)
 \openout1 = `plasma_blackout.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
+\scratchcounter=\count104
 \scratchdimen=\dimen121
 \scratchbox=\box30
-\nofMPsegments=\count103
-\nofMParguments=\count104
+\nofMPsegments=\count105
+\nofMParguments=\count106
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count105
+\MPscratchCnt=\count107
 \MPscratchDim=\dimen122
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
 \everyMPtoPDFconversion=\toks23
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -224,115 +232,196 @@ Underfull \vbox (badness 2103) has occurred while \output is active []
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 52.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
 
-Underfull \hbox (badness 1436) in paragraph at lines 57--57
+
+LaTeX Warning: Reference `sec:Solutions' on page 2 undefined on input line 56.
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 58--58
 []\OT1/cmr/bx/n/14.4 Plasma Sheaths of Hy-per-
  []
 
+<Images/Shadowgraphs.jpg, id=13, 572.1375pt x 200.75pt>
+File: Images/Shadowgraphs.jpg Graphic file (type jpg)
 
-Underfull \hbox (badness 5050) in paragraph at lines 61--61
-[]\OT1/cmr/bx/n/12 Aerothermodynamics of Hy-per-sonic
+<use Images/Shadowgraphs.jpg>
+Package pdftex.def Info: Images/Shadowgraphs.jpg used on input line 68.
+(pdftex.def)             Requested size: 234.5pt x 82.28046pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 68--69
+ [][] 
  []
 
+<Images/BluntBody.png, id=14, 550.055pt x 522.95375pt>
+File: Images/BluntBody.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
+<use Images/BluntBody.png>
+Package pdftex.def Info: Images/BluntBody.png used on input line 76.
+(pdftex.def)             Requested size: 187.60071pt x 178.35251pt.
+
+<Images/SlenderBody.png, id=15, 696.6025pt x 479.7925pt>
+File: Images/SlenderBody.png Graphic file (type png)
+
+<use Images/SlenderBody.png>
+Package pdftex.def Info: Images/SlenderBody.png used on input line 82.
+(pdftex.def)             Requested size: 187.60071pt x 129.20892pt.
+
+<Images/RAMC_FlowField.png, id=16, 930.47626pt x 678.535pt>
+File: Images/RAMC_FlowField.png Graphic file (type png)
+
+<use Images/RAMC_FlowField.png>
+Package pdftex.def Info: Images/RAMC_FlowField.png used on input line 92.
+(pdftex.def)             Requested size: 234.5pt x 171.0pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 92--93
+ [][] 
+ []
+
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 93.
+[2 <./Images/Shadowgraphs.jpg> <./Images/RAMC_FlowField.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
 []\OT1/cmr/bx/n/12 Properties of Hy-per-sonic Plasma
  []
 
-[2] [3]
-Underfull \hbox (badness 3977) in paragraph at lines 223--224
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./Images/BluntBody.png> <./Images/SlenderBody.png>] [4]
+Underfull \hbox (badness 3977) in paragraph at lines 248--249
 []\OT1/cmr/m/n/10 Substituting the plane wave so-lu-tion $\OT1/cmr/bx/n/10 E \O
 T1/cmr/m/n/10 =
  []
 
-[4] [5] [6]
+[5] [6] [7]
+
+LaTeX Warning: Reference `sec:Solutions' on page 8 undefined on input line 401.
+
+
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ã in font cmr10!
- <Images/intro-atmospheric.png, id=37, 963.6pt x 722.7pt>
+<Images/intro-atmospheric.png, id=46, 963.6pt x 722.7pt>
 File: Images/intro-atmospheric.png Graphic file (type png)
 
 <use Images/intro-atmospheric.png>
-Package pdftex.def Info: Images/intro-atmospheric.png used on input line 391.
+Package pdftex.def Info: Images/intro-atmospheric.png used on input line 444.
 (pdftex.def)             Requested size: 211.04857pt x 158.2777pt.
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 392.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [8]
 
-Underfull \vbox (badness 1533) has occurred while \output is active []
+LaTeX Warning: Reference `sec:Solutions' on page 9 undefined on input line 469.
 
- [7 <./Images/intro-atmospheric.png>]
-<Images/Kimetal_ExB_config.png, id=45, 701.62125pt x 551.05875pt>
+
+<Images/Kimetal_ExB_config.png, id=51, 701.62125pt x 551.05875pt>
 File: Images/Kimetal_ExB_config.png Graphic file (type png)
 
 <use Images/Kimetal_ExB_config.png>
-Package pdftex.def Info: Images/Kimetal_ExB_config.png used on input line 423.
+Package pdftex.def Info: Images/Kimetal_ExB_config.png used on input line 479.
 (pdftex.def)             Requested size: 211.04857pt x 165.75613pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [9 <./Images/intro-atmospheric.png>]
+<Images/StokesDiagram.png, id=56, 963.6pt x 722.7pt>
+File: Images/StokesDiagram.png Graphic file (type png)
 
-Underfull \vbox (badness 1430) has occurred while \output is active []
+<use Images/StokesDiagram.png>
+Package pdftex.def Info: Images/StokesDiagram.png used on input line 495.
+(pdftex.def)             Requested size: 234.5pt x 175.86656pt.
 
- [8 <./Images/Kimetal_ExB_config.png>] (./plasma_blackout.bbl
-Underfull \hbox (badness 1199) in paragraph at lines 50--53
+Overfull \hbox (5.0pt too wide) in paragraph at lines 495--497
+ [][] 
+ []
+
+<Images/Stokes_NumericalSim2.png, id=57, 516.93124pt x 358.33875pt>
+File: Images/Stokes_NumericalSim2.png Graphic file (type png)
+
+<use Images/Stokes_NumericalSim2.png>
+Package pdftex.def Info: Images/Stokes_NumericalSim2.png used on input line 508
+.
+(pdftex.def)             Requested size: 234.5pt x 162.55775pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 508--510
+ [][] 
+ []
+
+(./plasma_blackout.bbl
+Underfull \vbox (badness 1009) has occurred while \output is active []
+
+ [10 <./Images/Kimetal_ExB_config.png> <./Images/StokesDiagram.png>]
+Underfull \hbox (badness 1210) in paragraph at lines 32--36
+\OT1/cmr/m/n/10 Sci-en-tific Re-port 1, Col-orado State Uni-ver-
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 62--65
 \OT1/cmr/m/it/10 Prin-ci-ples of Elec-tro-mag-netism\OT1/cmr/m/n/10 .  Jones an
 d
  []
 
-[9]
+[11 <./Images/Stokes_NumericalSim2.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ê in font cmr10!
 
-Underfull \hbox (badness 2600) in paragraph at lines 95--98
+Underfull \hbox (badness 2600) in paragraph at lines 110--113
 \OT1/cmr/m/n/10 Za-kharov, ``Com-mu-ni-ca-tion through plasma
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 100--103
+Underfull \hbox (badness 2600) in paragraph at lines 115--118
 \OT1/cmr/m/n/10 Za-kharov, ``Com-mu-ni-ca-tion through plasma
  []
 
-) [10] (./plasma_blackout.aux) ) 
+) [12
+
+] (./plasma_blackout.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3288 strings out of 493304
- 49464 string characters out of 6139870
- 117894 words of memory out of 5000000
- 6710 multiletter control sequences out of 15000+600000
+ 3385 strings out of 493304
+ 51364 string characters out of 6139870
+ 118980 words of memory out of 5000000
+ 6798 multiletter control sequences out of 15000+600000
  12000 words of font info for 43 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,8n,38p,476b,367s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-bx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on plasma_blackout.pdf (10 pages, 469469 bytes).
+ 38i,8n,38p,447b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on plasma_blackout.pdf (12 pages, 887498 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
+ 126 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

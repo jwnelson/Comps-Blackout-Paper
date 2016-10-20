@@ -22,6 +22,18 @@ R.~D. Launius and D.~R. Jenkins, {\em Coming {Home}: {Reentry} and {Recovery}
   from {Space}}.
 \newblock {NASA} {Aeronautics} {Book} {Series}, NASA, 2012.
 
+\bibitem{hartunian_implications_2007}
+R.~A. Hartunian, G.~E. Stewart, T.~J. Curtiss, S.~D. Fergason, and R.~W.
+  Seibold, ``Implications and {Mitigation} of {Radio} {Frequency} {Blackout}
+  during {Reentry} of {Reusable} {Launch} {Vehicles},'' (Hilton Head, South
+  Carolina), Aug. 2007.
+
+\bibitem{rybak_causes_1970}
+J.~P. Rybak, ``Causes, {Effects} and {Diagnostic} {Measurements} of the
+  {Reentry} {Plasma} {Sheath},'' Scientific {Report}~1, Colorado State
+  University Department of Electrical Engineering, Fort Collins, Colorado, Dec.
+  1970.
+
 \bibitem{chen_introduction_1984}
 F.~Chen, {\em Introduction to {Plasma} {Physics} and {Controlled} {Fusion}},
   vol.~1.
@@ -51,11 +63,10 @@ R.~Fitzpatrick, {\em Maxwell's {Equations} and the {Principles} of
   {Electromagnetism}}.
 \newblock Jones and Bartlett Learning, 2008.
 
-\bibitem{hartunian_implications_2007}
-R.~A. Hartunian, G.~E. Stewart, T.~J. Curtiss, S.~D. Fergason, and R.~W.
-  Seibold, ``Implications and {Mitigation} of {Radio} {Frequency} {Blackout}
-  during {Reentry} of {Reusable} {Launch} {Vehicles},'' (Hilton Head, South
-  Carolina), Aug. 2007.
+\bibitem{huber_entry_1971}
+P.~W. Huber, N.~D. Akey, W.~Crosswell, and C.~Swift, ``The entry plasma sheath
+  and its effects on space vehicle electromagnetic systems,'' {NASA}
+  {Technical} {Note} SP-252, 1971.
 
 \bibitem{altshuler_comparison_1988}
 E.~Altshuler and R.~Marr, ``A comparison of experimental and theoretical values
@@ -73,6 +84,10 @@ B.~V. Oaida, W.~Wu, B.~I. Erkmen, A.~Biswas, K.~S. Andrews, M.~Kokorowski, and
 M.~J. Abrahamson, B.~V. Oaida, O.~Sindiy, and A.~Biswas, ``Achieving
   operational two-way laser acquisition for {OPALS} payload on the
   {International} {Space} {Station},'' vol.~9354, pp.~935408--935408--21, 2015.
+
+\bibitem{evans_reduction_1965}
+J.~S. Evans, ``Reduction of free electron concentration in a reentry plasma by
+  injection of liquids,'' (Boston, Massachusetts), Sept. 1965.
 
 \bibitem{kim_plasma_2007}
 M.~Kim, M.~Keidar, I.~D. Boyd, and D.~Morris, ``Plasma density reduction using
@@ -100,10 +115,5 @@ S.~V. Nazarenko, A.~C. Newell, and V.~E. Zakharov, ``Communication through
 A.~O. Korotkevich, A.~C. Newell, and V.~E. Zakharov, ``Communication through
   plasma sheaths,'' {\em Journal of Applied Physics}, vol.~102, p.~083305, Oct.
   2007.
-
-\bibitem{huber_entry_1971}
-P.~W. Huber, N.~D. Akey, W.~Crosswell, and C.~Swift, ``The entry plasma sheath
-  and its effects on space vehicle electromagnetic systems,'' {NASA}
-  {Technical} {Note} SP-252, 1971.
 
 \end{thebibliography}

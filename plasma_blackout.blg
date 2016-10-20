@@ -7,48 +7,49 @@ Warning--empty journal in allen_study_1958
 Warning--empty institution in dunn_theoretical_1973
 Warning--empty booktitle in allen_aerodynamic_1964
 Warning--empty booktitle in hartunian_implications_2007
+Warning--empty institution in huber_entry_1971
 Warning--empty booktitle in oaida_optical_2014
 Warning--empty booktitle in abrahamson_achieving_2015
-Warning--empty institution in huber_entry_1971
-You've used 21 entries,
+Warning--empty booktitle in evans_reduction_1965
+You've used 23 entries,
             1876 wiz_defined-function locations,
-            596 strings with 7446 characters,
-and the built_in function-call counts, 5055 in all, are:
-= -- 490
-> -- 208
-< -- 4
-+ -- 78
-- -- 57
-* -- 370
-:= -- 730
-add.period$ -- 25
-call.type$ -- 21
-change.case$ -- 19
+            606 strings with 7801 characters,
+and the built_in function-call counts, 5338 in all, are:
+= -- 514
+> -- 216
+< -- 5
++ -- 82
+- -- 59
+* -- 393
+:= -- 776
+add.period$ -- 27
+call.type$ -- 23
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 262
-empty$ -- 477
-format.name$ -- 57
-if$ -- 1202
+cite$ -- 31
+duplicate$ -- 281
+empty$ -- 511
+format.name$ -- 59
+if$ -- 1266
 int.to.chr$ -- 0
-int.to.str$ -- 21
-missing$ -- 20
-newline$ -- 70
-num.names$ -- 21
-pop$ -- 82
+int.to.str$ -- 23
+missing$ -- 21
+newline$ -- 76
+num.names$ -- 23
+pop$ -- 91
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 156
+skip$ -- 158
 stack$ -- 0
 substring$ -- 294
-swap$ -- 91
-text.length$ -- 4
+swap$ -- 92
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 7
-while$ -- 42
-width$ -- 23
-write$ -- 195
-(There were 7 warnings)
+warning$ -- 8
+while$ -- 44
+width$ -- 25
+write$ -- 213
+(There were 8 warnings)
