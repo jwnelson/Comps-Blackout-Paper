@@ -49,15 +49,15 @@ M.~Kim, M.~Keidar, and I.~D. Boyd, ``Analysis of an {Electromagnetic}
   {Mitigation} {Scheme} for {Reentry} {Telemetry} {Through} {Plasma},'' {\em
   Journal of Spacecraft and Rockets}, vol.~45, no.~6, pp.~1223--1229, 2008.
 
-\bibitem{lehnert_plasma_1964}
-R.~Lehnert and B.~Rosenbaum, ``Plasma {Effects} on {Apollo} {Re}-{Entry}
-  {Communication},'' {NASA} {Technical} {Note} D-2732, Goddard Space Flight
-  Center, Greenbelt, Maryland, Jan. 1964.
-
 \bibitem{keidar_electromagnetic_2008}
 M.~Keidar, M.~Kim, and I.~Boyd, ``Electromagnetic {Reduction} of {Plasma}
   {Density} {During} {Atmospheric} {Reentry} and {Hypersonic} {Flights},'' {\em
   Journal of Spacecraft and Rockets}, vol.~45, no.~3, pp.~445--453, 2008.
+
+\bibitem{lehnert_plasma_1964}
+R.~Lehnert and B.~Rosenbaum, ``Plasma {Effects} on {Apollo} {Re}-{Entry}
+  {Communication},'' {NASA} {Technical} {Note} D-2732, Goddard Space Flight
+  Center, Greenbelt, Maryland, Jan. 1964.
 
 \bibitem{papas_theory_1965}
 C.~H. Papas, {\em Theory of {Electromagnetic} {Wave} {Propagation}}.
@@ -67,6 +67,12 @@ C.~H. Papas, {\em Theory of {Electromagnetic} {Wave} {Propagation}}.
 R.~Fitzpatrick, {\em Maxwell's {Equations} and the {Principles} of
   {Electromagnetism}}.
 \newblock Jones and Bartlett Learning, 2008.
+
+\bibitem{belov_investigation_2001}
+I.~F. Belov, V.~Y. Borovoy, V.~A. Gorelov, A.~Y. Kireev, A.~S. Korolev, and
+  E.~A. Stepanov, ``Investigation of {Remote} {Antenna} {Assembly} for {Radio}
+  {Communication} with {Reentry} {Vehicle},'' {\em Journal of Spacecraft and
+  Rockets}, vol.~38, no.~2, pp.~249--256, 2001.
 
 \bibitem{altshuler_comparison_1988}
 E.~Altshuler and R.~Marr, ``A comparison of experimental and theoretical values
@@ -95,6 +101,22 @@ L.~C. Schroeder and F.~P. Russo, ``Flight {Investigation} and {Analysis} of
   {Gemini} 3 {Reentry},'' {NASA} {Technical} {Memorandum}, Langley Research
   Center, Mar. 1968.
 
+\bibitem{russo_measurements_1964}
+F.~P. Russo and J.~Hughes, ``Measurements of the effects of static magnetic
+  fields on {VHF} transmission in ionized flow fields,'' {NASA} {Technical}
+  {Memorandum} NASA TM X-907, 1964.
+
+\bibitem{kim_electromagnetic_2009}
+M.~K. Kim, {\em Electromagnetic {Manipulation} of {Plasma} {Layer} {For}
+  {Re}-entry {Blackout} {Mitigation}}.
+\newblock Dissertation, University of Michigan, 2009.
+
+\bibitem{otsu_feasibility_2006}
+H.~Otsu, A.~Matsuda, T.~Abe, and D.~Konigorski, ``Feasibility {Study} on the
+  {Flight} {Demonstration} for a reentry vehicle with the {Magnetic} {Flow}
+  {Control} {System},'' in {\em 37th {AIAA} {Plasmadynamics} and {Lasers}
+  {Conference}}, American Institute of Aeronautics and Astronautics, June 2006.
+
 \bibitem{kim_plasma_2007}
 M.~Kim, M.~Keidar, I.~D. Boyd, and D.~Morris, ``Plasma density reduction using
   electromagnetic {ExB} field during reentry flight,'' {\em International
@@ -106,11 +128,10 @@ M.~Kim, I.~D. Boyd, and M.~Keidar, ``Modeling of {Electromagnetic}
   {Flight},'' {\em Journal of Spacecraft and Rockets}, vol.~47, no.~1,
   pp.~29--35, 2010.
 
-\bibitem{otsu_feasibility_2006}
-H.~Otsu, A.~Matsuda, T.~Abe, and D.~Konigorski, ``Feasibility {Study} on the
-  {Flight} {Demonstration} for a reentry vehicle with the {Magnetic} {Flow}
-  {Control} {System},'' in {\em 37th {AIAA} {Plasmadynamics} and {Lasers}
-  {Conference}}, American Institute of Aeronautics and Astronautics, June 2006.
+\bibitem{stenzel_new_2013}
+R.~L. Stenzel and J.~M. Urrutia, ``A new method for removing the blackout
+  problem on reentry vehicles,'' {\em Journal of Applied Physics}, vol.~113,
+  no.~10, 2013.
 
 \bibitem{nazarenko_communication_1994}
 S.~V. Nazarenko, A.~C. Newell, and V.~E. Zakharov, ``Communication through

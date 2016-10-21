@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.16)  20 OCT 2016 05:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.16)  20 OCT 2016 23:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -249,203 +249,258 @@ Underfull \hbox (badness 1436) in paragraph at lines 63--63
 []\OT1/cmr/bx/n/14.4 Plasma Sheaths of Hy-per-
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 65.
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 65.
-
-<Images/Shadowgraphs.jpg, id=14, 572.1375pt x 200.75pt>
-File: Images/Shadowgraphs.jpg Graphic file (type jpg)
-
-<use Images/Shadowgraphs.jpg>
-Package pdftex.def Info: Images/Shadowgraphs.jpg used on input line 73.
-(pdftex.def)             Requested size: 234.5pt x 82.28046pt.
-
-Overfull \hbox (5.0pt too wide) in paragraph at lines 73--74
- [][] 
- []
-
-<Images/BluntBody.png, id=15, 550.055pt x 522.95375pt>
+<Images/BluntBody.png, id=14, 550.055pt x 522.95375pt>
 File: Images/BluntBody.png Graphic file (type png)
 
 <use Images/BluntBody.png>
-Package pdftex.def Info: Images/BluntBody.png used on input line 81.
+Package pdftex.def Info: Images/BluntBody.png used on input line 74.
 (pdftex.def)             Requested size: 187.60071pt x 178.35251pt.
 
-<Images/SlenderBody.png, id=16, 696.6025pt x 479.7925pt>
+<Images/SlenderBody.png, id=15, 696.6025pt x 479.7925pt>
 File: Images/SlenderBody.png Graphic file (type png)
 
 <use Images/SlenderBody.png>
-Package pdftex.def Info: Images/SlenderBody.png used on input line 87.
+Package pdftex.def Info: Images/SlenderBody.png used on input line 80.
 (pdftex.def)             Requested size: 187.60071pt x 129.20892pt.
 
-<Images/RAMC_FlowField.png, id=17, 930.47626pt x 678.535pt>
+<Images/RAMC_FlowField.png, id=16, 930.47626pt x 678.535pt>
 File: Images/RAMC_FlowField.png Graphic file (type png)
 
 <use Images/RAMC_FlowField.png>
-Package pdftex.def Info: Images/RAMC_FlowField.png used on input line 97.
+Package pdftex.def Info: Images/RAMC_FlowField.png used on input line 90.
 (pdftex.def)             Requested size: 234.5pt x 171.0pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 97--98
+Overfull \hbox (5.0pt too wide) in paragraph at lines 90--91
  [][] 
  []
 
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 91.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 98.
-[2 <./Images/RAMC_BlackoutProfile.png> <./Images/Shadowgraphs.jpg> <./Images/RA
-MC_FlowField.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 91.
+ [2 <./Images/RAMC_BlackoutProfile.png> <./Images/RAMC_FlowField.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
 []\OT1/cmr/bx/n/12 Properties of Hy-per-sonic Plasma
  []
 
 [3 <./Images/BluntBody.png> <./Images/SlenderBody.png>]
-<Images/PlasmaDensity_Keideretal.png, id=31, 639.13782pt x 478.78876pt>
+<Images/PlasmaDensity_Keideretal.png, id=30, 639.13782pt x 478.78876pt>
 File: Images/PlasmaDensity_Keideretal.png Graphic file (type png)
 
 <use Images/PlasmaDensity_Keideretal.png>
 Package pdftex.def Info: Images/PlasmaDensity_Keideretal.png used on input line
- 157.
+ 139.
 (pdftex.def)             Requested size: 234.5pt x 175.666pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 157--158
+Overfull \hbox (5.0pt too wide) in paragraph at lines 139--140
  [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4] [5 <./Images/PlasmaDensity_Keideretal.png>]
-Underfull \hbox (badness 3977) in paragraph at lines 262--263
+[4 <./Images/PlasmaDensity_Keideretal.png>]
+Underfull \hbox (badness 3977) in paragraph at lines 255--256
 []\OT1/cmr/m/n/10 Substituting the plane wave so-lu-tion $\OT1/cmr/bx/n/10 E \O
 T1/cmr/m/n/10 =
  []
 
-[6] [7]
+[5]
+Underfull \hbox (badness 1264) in paragraph at lines 292--293
+[]\OT1/cmr/m/n/10 The wavenum-ber for an elec-tro-mag-netic wave
+ []
 
-LaTeX Warning: Reference `sec:Solutions' on page 8 undefined on input line 463.
-
-
-[8]
+[6] [7] [8]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ã in font cmr10!
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-<Images/intro-atmospheric.png, id=51, 963.6pt x 722.7pt>
+ [9] <Images/intro-atmospheric.png, id=53, 963.6pt x 722.7pt>
 File: Images/intro-atmospheric.png Graphic file (type png)
 
 <use Images/intro-atmospheric.png>
-Package pdftex.def Info: Images/intro-atmospheric.png used on input line 506.
+Package pdftex.def Info: Images/intro-atmospheric.png used on input line 530.
 (pdftex.def)             Requested size: 211.04857pt x 158.2777pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9]
-<Images/RAMC_LangmuirWaterFlow.png, id=56, 612.2875pt x 694.595pt>
+<Images/RAMC_LangmuirWaterFlow.png, id=55, 612.2875pt x 694.595pt>
 File: Images/RAMC_LangmuirWaterFlow.png Graphic file (type png)
 
 <use Images/RAMC_LangmuirWaterFlow.png>
 Package pdftex.def Info: Images/RAMC_LangmuirWaterFlow.png used on input line 5
-29.
+53.
 (pdftex.def)             Requested size: 234.5pt x 266.01558pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 529--530
+Overfull \hbox (5.0pt too wide) in paragraph at lines 553--554
  [][] 
  []
 
-<Images/GeminiWaterDiagram.png, id=57, 657.2053pt x 468.24937pt>
+<Images/GeminiWaterDiagram.png, id=56, 657.2053pt x 468.24937pt>
 File: Images/GeminiWaterDiagram.png Graphic file (type png)
 
 <use Images/GeminiWaterDiagram.png>
-Package pdftex.def Info: Images/GeminiWaterDiagram.png used on input line 542.
+Package pdftex.def Info: Images/GeminiWaterDiagram.png used on input line 566.
 (pdftex.def)             Requested size: 187.59714pt x 133.65965pt.
- [10 <./Images/intro-atmospheric.png> <./Images/RAMC_LangmuirWaterFlow.png>]
-
-LaTeX Warning: Reference `sec:Solutions' on page 11 undefined on input line 560
-.
-
-<Images/Kimetal_ExB_config.png, id=62, 701.62125pt x 551.05875pt>
+ [10 <./Images/intro-atmospheric.png>]
+<Images/Kimetal_ExB_config.png, id=61, 701.62125pt x 551.05875pt>
 File: Images/Kimetal_ExB_config.png Graphic file (type png)
 
 <use Images/Kimetal_ExB_config.png>
-Package pdftex.def Info: Images/Kimetal_ExB_config.png used on input line 570.
+Package pdftex.def Info: Images/Kimetal_ExB_config.png used on input line 598.
 (pdftex.def)             Requested size: 211.04857pt x 165.75613pt.
- [11 <./Images/GeminiWaterDiagram.png> <./Images/Kimetal_ExB_config.png>]
-Underfull \hbox (badness 1430) in paragraph at lines 582--585
+ [11 <./Images/RAMC_LangmuirWaterFlow.png> <./Images/GeminiWaterDiagram.png>]
+<Images/Kim_DensityReduction.png, id=65, 543.53062pt x 502.87875pt>
+File: Images/Kim_DensityReduction.png Graphic file (type png)
+
+<use Images/Kim_DensityReduction.png>
+Package pdftex.def Info: Images/Kim_DensityReduction.png used on input line 605
+.
+(pdftex.def)             Requested size: 234.5pt x 216.9626pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 605--606
+ [][] 
+ []
+
+<Images/Kim_DensityModeling.png, id=66, 567.62062pt x 496.10344pt>
+File: Images/Kim_DensityModeling.png Graphic file (type png)
+
+<use Images/Kim_DensityModeling.png>
+Package pdftex.def Info: Images/Kim_DensityModeling.png used on input line 612.
+
+(pdftex.def)             Requested size: 234.5pt x 204.95555pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 612--613
+ [][] 
+ []
+
+<Images/Stenzel_ExperimentConfig1.png, id=67, 365.11406pt x 228.855pt>
+File: Images/Stenzel_ExperimentConfig1.png Graphic file (type png)
+
+<use Images/Stenzel_ExperimentConfig1.png>
+Package pdftex.def Info: Images/Stenzel_ExperimentConfig1.png used on input lin
+e 633.
+(pdftex.def)             Requested size: 234.5pt x 146.987pt.
+
+<Images/Stenzel_ExperimentConfig2.png, id=68, 289.83281pt x 285.31593pt>
+File: Images/Stenzel_ExperimentConfig2.png Graphic file (type png)
+
+<use Images/Stenzel_ExperimentConfig2.png>
+Package pdftex.def Info: Images/Stenzel_ExperimentConfig2.png used on input lin
+e 639.
+(pdftex.def)             Requested size: 234.5pt x 230.84778pt.
+
+<Images/Stenzel_ExperimentCurrentPlots.png, id=69, 676.77844pt x 548.0475pt>
+File: Images/Stenzel_ExperimentCurrentPlots.png Graphic file (type png)
+
+<use Images/Stenzel_ExperimentCurrentPlots.png>
+Package pdftex.def Info: Images/Stenzel_ExperimentCurrentPlots.png used on inpu
+t line 649.
+(pdftex.def)             Requested size: 234.5pt x 189.89612pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 649--650
+ [][] 
+ []
+
+<Images/Stenzel_ExperimentContourPlot.png, id=70, 954.56625pt x 365.86688pt>
+File: Images/Stenzel_ExperimentContourPlot.png Graphic file (type png)
+
+<use Images/Stenzel_ExperimentContourPlot.png>
+Package pdftex.def Info: Images/Stenzel_ExperimentContourPlot.png used on input
+ line 656.
+(pdftex.def)             Requested size: 469.0pt x 179.75644pt.
+
+<Images/Stenzel_Implementation.png, id=71, 488.57532pt x 256.70906pt>
+File: Images/Stenzel_Implementation.png Graphic file (type png)
+
+<use Images/Stenzel_Implementation.png>
+Package pdftex.def Info: Images/Stenzel_Implementation.png used on input line 6
+63.
+(pdftex.def)             Requested size: 234.5pt x 123.2111pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 663--664
+ [][] 
+ []
+
+[12 <./Images/Kimetal_ExB_config.png> <./Images/Kim_DensityReduction.png> <./Im
+ages/Kim_DensityModeling.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 <./Images/Stenzel_ExperimentConfig1.png> <./Images/Stenzel_ExperimentConfi
+g2.png> <./Images/Stenzel_ExperimentContourPlot.png>]
+Underfull \hbox (badness 1430) in paragraph at lines 693--696
 \OML/cmm/m/it/10 ![]$ \OT1/cmr/m/n/10 com-ing into con-tact with a one-dimensio
 nal
  []
 
-<Images/StokesDiagram.png, id=66, 963.6pt x 722.7pt>
+[14 <./Images/Stenzel_ExperimentCurrentPlots.png> <./Images/Stenzel_Implementat
+ion.png>] <Images/StokesDiagram.png, id=82, 963.6pt x 722.7pt>
 File: Images/StokesDiagram.png Graphic file (type png)
 
 <use Images/StokesDiagram.png>
-Package pdftex.def Info: Images/StokesDiagram.png used on input line 590.
+Package pdftex.def Info: Images/StokesDiagram.png used on input line 730.
 (pdftex.def)             Requested size: 257.95143pt x 193.45541pt.
 
-Overfull \hbox (28.45143pt too wide) in paragraph at lines 590--592
+Overfull \hbox (28.45143pt too wide) in paragraph at lines 730--732
  [][] 
  []
 
-<Images/Stokes_NumericalSim2.png, id=67, 516.93124pt x 358.33875pt>
+<Images/Stokes_NumericalSim2.png, id=83, 516.93124pt x 358.33875pt>
 File: Images/Stokes_NumericalSim2.png Graphic file (type png)
 
 <use Images/Stokes_NumericalSim2.png>
-Package pdftex.def Info: Images/Stokes_NumericalSim2.png used on input line 603
+Package pdftex.def Info: Images/Stokes_NumericalSim2.png used on input line 738
 .
 (pdftex.def)             Requested size: 234.5pt x 162.55775pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 603--605
+Overfull \hbox (5.0pt too wide) in paragraph at lines 738--740
  [][] 
  []
 
 (./plasma_blackout.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 <./Images/StokesDiagram.png>]
+Underfull \vbox (badness 4303) has occurred while \output is active []
+
+
 Underfull \hbox (badness 1210) in paragraph at lines 37--41
 \OT1/cmr/m/n/10 Sci-en-tific Re-port 1, Col-orado State Uni-ver-
  []
 
-[12 <./Images/StokesDiagram.png>]
+[16 <./Images/Stokes_NumericalSim2.png>]
 Underfull \hbox (badness 1199) in paragraph at lines 67--70
 \OT1/cmr/m/it/10 Prin-ci-ples of Elec-tro-mag-netism\OT1/cmr/m/n/10 .  Jones an
 d
  []
 
-[13 <./Images/Stokes_NumericalSim2.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ê in font cmr10!
 
-Underfull \hbox (badness 2600) in paragraph at lines 116--119
+Underfull \hbox (badness 2600) in paragraph at lines 137--140
 \OT1/cmr/m/n/10 Za-kharov, ``Com-mu-ni-ca-tion through plasma
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 121--124
+Underfull \hbox (badness 2600) in paragraph at lines 142--145
 \OT1/cmr/m/n/10 Za-kharov, ``Com-mu-ni-ca-tion through plasma
  []
 
-) [14
+) [17] [18
 
 ] (./plasma_blackout.aux)
-
-LaTeX Warning: There were undefined references.
-
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3413 strings out of 493304
- 52239 string characters out of 6139870
- 118048 words of memory out of 5000000
- 6822 multiletter control sequences out of 15000+600000
+ 3456 strings out of 493304
+ 53852 string characters out of 6139870
+ 119240 words of memory out of 5000000
+ 6860 multiletter control sequences out of 15000+600000
  12000 words of font info for 43 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,8n,38p,448b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,38p,448b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
@@ -453,20 +508,21 @@ live/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on plasma_blackout.pdf (14 pages, 1195005 bytes).
+1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmti10.pfb>
+Output written on plasma_blackout.pdf (18 pages, 2138019 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
+ 159 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
